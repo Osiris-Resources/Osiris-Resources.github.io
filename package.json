@@ -1,9 +1,9 @@
 {
-  "name": "osiris",
+  "name": "osiris-resources",
   "version": "1.0.0",
   "private": true,
-  "description": "osiris",
-  "author": "Tam",
+  "description": "Osiris Resources Website",
+  "author": "Tam Love-Pryde",
   "keywords": [
     "gatsby"
   ],
@@ -16,7 +16,14 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "bootstrap": "^5.2.0",
     "gatsby": "^4.19.2",
+    "gatsby-plugin-fontawesome-css": "^1.2.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^2.19.0",
     "gatsby-plugin-react-helmet": "^5.19.0",
     "gatsby-plugin-sharp": "^4.19.0",
@@ -24,8 +31,10 @@
     "gatsby-source-filesystem": "^4.19.0",
     "gatsby-transformer-sharp": "^4.19.0",
     "react": "^18.1.0",
+    "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-waypoint": "^10.3.0"
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
