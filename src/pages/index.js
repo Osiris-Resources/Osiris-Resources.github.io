@@ -1,4 +1,5 @@
 import * as React from "react"
+import Layout from "../components/layout"
 
 // styles
 const pageStyles = {
@@ -125,12 +126,11 @@ const links = [
   },
 ]
 
-// markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-     Hello World
-    </main>
+    <Layout isArticle={false} isHero={true}>
+      Hello World
+    </Layout>
   )
 }
 
