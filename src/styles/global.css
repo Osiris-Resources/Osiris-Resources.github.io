@@ -240,6 +240,190 @@ nav {
     color: #F5F5F5;
   }
 
+  /* Hero */
+  main {
+    height: 100%;
+  }
+  
+  .hero-container {
+    width: 100%;
+    min-height: 100%;
+    background: url(../images/Osiris_Background.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 68px;
+  }
+
+  .hero-container .col-lg-7 {
+    align-self: center;
+  }
+  
+  .hero-content {
+    display: block;
+    width: 100%;
+  }
+  
+  .hero-image {
+    width: 80%;
+    margin-top: -240px;
+    margin-left: auto;
+    margin-bottom: 120px;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .hero-image {
+        margin-top: 10px;
+        margin-right: auto;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .hero-image {
+        width: 90%;
+    }
+  }
+  
+  .hero-image-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .hero-image-container {
+        height: 0;
+        padding-top: 15%;
+        margin-top: -50px;
+        position: relative;
+    }
+    
+    .hero-image-container svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+  }
+  
+  .hero-container h1 {
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 44px;
+    margin-bottom: 40px;
+  }
+  
+  .hero-container h3 {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    line-height: 1.5;
+    font-family: "Karla", sans-serif;
+  }
+  
+  .hero-container h3 span {
+    font-weight: 600;
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 1199px) {
+    .hero-container h1 {
+        font-size: 38px;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    .hero-container h1, .hero-container h3 {
+        text-align: center;
+    }
+  
+    .hero-container h1 {
+        margin-top: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .hero-container h1 {
+        font-size: 34px;
+    }
+  
+    .hero-container h3 {
+        font-size: 22px;
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    .hero-container h1 {
+        font-size: 26px;
+    }
+  }
+  
+  .hero-container .hero-cta {
+    padding-bottom: 50px;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .hero-container .hero-cta {
+        padding-bottom: 75px;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    .hero-container .hero-cta {
+        text-align: center;
+    }
+  }
+  
+  .hero-container a {
+    width: 230px
+  }
+  
+  @media screen and (min-width: 992px) and (max-width: 1400px) {
+    .hero-container a {
+        display: block;
+        margin: 0 0 25px 0;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .hero-container a {
+        margin: 0 12px 25px 12px;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .hero-container a {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+  }
+  
+  .hero-container .hero-btn-last  {
+    margin: 0 24px;
+  }
+  
+  @media screen and (min-width: 992px) and (max-width: 1400px) {
+    .hero-container .hero-btn-last {
+        display: block;
+        margin: 0;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .hero-container .hero-btn-last  {
+        margin: 0 12px 25px 12px;
+    }
+  }
+  
+  @media screen and (max-width: 686px) {
+    .hero-container .hero-btn-last  {
+        display: block;
+        margin: 0 auto 25px auto;
+    }
+  }
+
   /* Footer */
   footer {
     background: #000000;
