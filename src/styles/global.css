@@ -1,0 +1,233 @@
+/* General */
+html, body, #gatsby-focus-wrapper, #___gatsby {
+    height: 100%;
+    width: 100%;
+  }
+  
+  html {
+    background-color: #FFFFFF;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Cabin", sans-serif;
+  }
+  
+  p, ul, li {
+    font-family: "Dosis", sans-serif;
+    font-weight: 400;
+  }
+
+/* Nav */
+  
+nav {
+    background: transparent;
+  }
+
+  .top-menu-scrolling-hero {
+    background: rgba(0, 0, 0, 0.7);
+    height: 40px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .top-menu-scrolling-hero {
+        display: none;
+      }
+  }
+  
+  .top-menu-scrolling-content {
+    background: #000000;
+    height: 40px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .top-menu-scrolling-content {
+        display: none;
+      }
+  }
+
+  .nav-contact .nav-link {
+    font-size: 14px !important;
+  }
+
+  .nav-contact .nav-link .fa-earth-europe,   .nav-contact .nav-link .fa-earth-americas {
+    margin-right: 5px;
+    font-size: 16px;
+    margin-bottom: -1px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .nav-only {
+        display: none;
+    }
+  }
+
+  .nav-social {
+    width: 130px;
+    display: flex;
+    padding-left: 15px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-social a {
+    transition-timing-function: ease-in;
+    transition: 1s;
+  }
+
+  .nav-social a:hover {
+    color: #40F5D4;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .nav-social {
+        width: 180px;
+        padding-right: 15px;
+        padding-right: 15px;
+    }
+  }
+
+  .nav-social a {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: -3px;;
+  }
+  
+  .menu-scrolling-hero {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 31.78%, rgba(0, 0, 0, 0) 90.59%) no-repeat;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .menu-scrolling-hero {
+        margin-top: 0;
+    }
+  }
+  
+  .menu-scrolling-content {
+    background: linear-gradient(180deg, #000000 31.78%, rgba(0, 0, 0, 0) 90.59%) no-repeat;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    margin-top: 40px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .menu-scrolling-content {
+        margin-top: 0;
+    }
+  }
+  
+  .navbar {
+    padding: 12px 1rem;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .navbar {
+        background: linear-gradient(180deg, #000000 31.78%, rgba(0, 0, 0, 0) 90.59%) no-repeat;
+    }
+  }
+  
+  .navbar-brand img {
+    width: 130px;
+    padding-left: 12px;
+    position: relative;
+    bottom: 2px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .navbar-brand img {
+      bottom: -1px;
+    }
+  }
+  
+  .navbar-dark .navbar-toggler {
+    border: 0;
+    position: relative;
+    top: 0;
+    color: #FFFFFF;
+    padding-right: 5px;
+  }
+  
+  .navbar-dark .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  @media screen and (max-width: 1199px) {
+    .tog-container {
+        width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 1199px) {
+    .navbar-dark .navbar-toggler {
+        float: right;
+        border-color: #FFFFFF;
+    }
+  }
+  
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .navbar-collapse {
+    text-align: center;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #FFFFFF;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition-timing-function: ease-in;
+    transition: 1s;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #F5F5F5;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:focus {
+    color: #F5F5F5;
+  }
+
+  /* Footer */
+  footer {
+    background: #000000;
+    padding: 15px 30px 0 30px;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+    color: #FFFFFF;
+  }
+
+  @media screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+  }
+
+ footer p {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  footer a {
+    color: #FFFFFF;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 5px;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    color: #40F5D4;
+  }
