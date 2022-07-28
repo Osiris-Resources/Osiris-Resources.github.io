@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkosiris=self.webpackChunkosiris||[]).push([[678],{6558:function(e,t,o){o.r(t);var i=o(7294),n={color:"#232129",padding:96,fontFamily:"-apple-system, Roboto, sans-serif, serif"};Object.assign({},{color:"#8954A8",fontWeight:"bold",fontSize:16,verticalAlign:"5%"},{listStyleType:"none",marginBottom:24});t.default=function(){return i.createElement("main",{style:n},"Hello World")}}}]);
-//# sourceMappingURL=component---src-pages-index-js-0281fef335ab72f80c10.js.map
