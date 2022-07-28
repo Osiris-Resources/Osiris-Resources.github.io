@@ -1,13 +1,13 @@
 import * as React from 'react'
 import Nav from './nav'
 import Footer from './footer'
-// import SEO from './seo'
+import SEO from './seo'
 // import CookieBanner from './cookies'
 
-const Layout = ({ pTitle, pDescription, pKeywords, pImage, simpleNav, isHero, children }) => {
+const Layout = ({ title, description, keywords, image, simpleNav, isHero, children }) => {
   return (
     <>
-      {/* <SEO title={pTitle} description={pDescription} image={pImage} article={isArticle} keywords={pKeywords} /> */}
+      <SEO title={title} description={description} image={image} keywords={keywords} />
       <Nav simpleNav={simpleNav} isHero={isHero} />
       <main>
         {children}
