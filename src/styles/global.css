@@ -284,6 +284,7 @@ nav {
     min-height: 100%;
     background: url(../images/Osiris_Background.png) no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -597,6 +598,120 @@ nav {
         display: block;
         margin: 0 auto 25px auto;
     }
+  }
+
+  /* Partners */
+  .partners .partner-box {
+    padding: 20px;
+    width: calc(100% / 8);
+    height: 110px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-timing-function: ease-in;
+    transition: 1s;
+    position: relative;
+  }
+
+  .partners .partner-box:nth-child(1) {
+    background: #000000;
+  }
+
+  .partners .partner-box:hover:nth-child(1) {
+    background: #000000;
+  }
+
+  .partners .partner-box:nth-child(2) {
+    background: #2E2E2E;
+  }
+
+  .partners .partner-box:hover:nth-child(2) {
+    background: #16325B;
+  }
+
+  .partners .partner-box:nth-child(3) {
+    background: #232323;
+  }
+
+  .partners .partner-box:hover:nth-child(3) {
+    background: #26185D;
+  }
+
+  .partners .partner-box:nth-child(4) {
+    background: #7D7D7D;
+  }
+
+  .partners .partner-box:hover:nth-child(4) {
+    background: #2496ED;
+  }
+
+  .partners .partner-box:nth-child(5) {
+    background: #959595;
+  }
+
+  .partners .partner-box:hover:nth-child(5) {
+    background: #826EF5;
+  }
+
+  .partners .partner-box:nth-child(6) {
+    background: #4A4A4A;
+  }
+
+  .partners .partner-box:hover:nth-child(6) {
+    background: #B01C2E;
+  }
+
+  .partners .partner-box:nth-child(7) {
+    background: #373737;
+  }
+
+  .partners .partner-box:hover:nth-child(7) {
+    background: #004682;
+  }
+
+  .partners .partner-box:nth-child(8) {
+    background: #414141;
+  }
+
+  .partners .partner-box:hover:nth-child(8) {
+    background: #CD040B;
+  }
+
+  .partners .partner-box:before {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    top: 12px;
+    color: #FFFFFF;
+    font-family: 'Cabin', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    transition-timing-function: ease-in;
+    transition: .5s;
+  }
+
+  .partners .partner-box:hover:before {
+    opacity: 1;
+    content: 'Partner';
+    position: absolute;
+    top: 12px;
+    color: #FFFFFF;
+    font-family: 'Cabin', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 4px 6px 1px 6px;
+    border-radius: 4px;
+    border: 2px solid #FFFFFF;
+  }
+
+  .partners .partner-box h6 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 0;
   }
 
   /* Footer */

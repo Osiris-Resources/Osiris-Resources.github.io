@@ -7,10 +7,10 @@ const IndexPage = () => {
   const [isHero, setIsHero] = useState(true)
   return (
     <Layout isArticle={false} isHero={isHero}>
-      <div className="hero-container">
-                <div className="hero-container-sub">
-                    <div className="container">
-                        <div className="row">
+        <div className="hero-container">
+            <div className="hero-container-sub">
+                <div className="container">
+                    <div className="row">
                         <div className="col-lg-6 order-lg-2">
                                 <div className="hero-image">
                                     <div className="hero-image-container">
@@ -209,7 +209,37 @@ const IndexPage = () => {
                     </div>
                 </div>
             </div>
-            <Waypoint onEnter={() => setIsHero(true)} onLeave={() => setIsHero(false)} topOffset={100} />
+        <Waypoint onEnter={() => setIsHero(true)} onLeave={() => setIsHero(false)} topOffset={106} />
+        <div className="partners">
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="partner-box">
+                        <h6>Alef Inc</h6>
+                    </div>
+                    <div className="partner-box">
+                        <h6>Arista Networks</h6>
+                    </div>
+                    <div className="partner-box">
+                        <h6>Blu Wireless</h6>
+                    </div>
+                    <div className="partner-box">
+                        <h6>Docker</h6>
+                    </div>
+                    <div className="partner-box">
+                        <h6>NetMinded</h6>
+                    </div>
+                    <div className="partner-box">
+                        <h6>University of Bristol</h6>
+                    </div>
+                    <div className="partner-box">
+                        <h6>University of Surrey</h6>
+                    </div>
+                    <div className="partner-box">
+                        <h6>Veea Systems</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
     </Layout>
   )
 }
