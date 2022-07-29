@@ -212,7 +212,7 @@ const IndexPage = () => {
         <Waypoint onEnter={() => setIsHero(true)} onLeave={() => setIsHero(false)} topOffset={106} />
         <div className="partners">
             <div className="container-fluid">
-                <div className="row">
+                <div className="row partner-box-container">
                     <div className="partner-box">
                         <h6>Alef Inc</h6>
                     </div>
