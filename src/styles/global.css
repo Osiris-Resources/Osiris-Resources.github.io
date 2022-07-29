@@ -72,6 +72,7 @@ nav {
 
   .nav-contact .nav-link {
     font-size: 14px !important;
+    font-weight: 400 !important;
   }
 
   .nav-contact .nav-link .fa-earth-europe,   .nav-contact .nav-link .fa-earth-americas {
@@ -117,7 +118,7 @@ nav {
   .nav-social a {
     color: #FFFFFF;
     font-size: 18px;
-    margin-bottom: -3px;;
+    margin-bottom: -3px;
   }
 
   @media screen and (max-width: 1199px) {
@@ -211,7 +212,7 @@ nav {
   .navbar-dark .navbar-nav .nav-link {
     color: #FFFFFF;
     font-family: 'Cabin', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     margin-left: 10px;
     margin-right: 10px;
@@ -279,7 +280,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 68px;
   }
 
   .hero-container .col-lg-6 {
@@ -331,6 +331,157 @@ nav {
         left: 0;
     }
   }
+
+  #globe {
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+  }
+
+  #circle1 {
+    animation: opacity 4s ease-in-out infinite;
+  }
+
+  #circle2 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 1.5s;
+  }
+
+  #circle3 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 3s;
+  }
+
+  #circle4 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 4.5s;
+  }
+
+  #circle5 {
+    animation: opacity 4s ease-in-out infinite;
+  }
+
+  #circle6 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 1.5s;
+  }
+
+  #circle7 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 3s;
+  }
+
+  #circle8 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 4.5s;
+  }
+
+  #circle9 {
+    animation: opacity 4s ease-in-out infinite;
+  }
+
+  #circle10 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 1.5s;
+  }
+
+  #circle11 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 3s;
+  }
+
+  #circle12 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 4.5s;
+  }
+
+  #circle13 {
+    animation: opacity 4s ease-in-out infinite;
+  }
+
+  #circle14 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 1.5s;
+  }
+
+  #circle15 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 3s;
+  }
+
+  #circle16 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 4.5s;
+  }
+
+  #circle17 {
+    animation: opacity 4s ease-in-out infinite;
+  }
+
+  #circle18 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 1.5s;
+  }
+
+  #circle19 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 3s;
+  }
+
+  #circle20 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 4.5s;
+  }
+
+  #circle21 {
+    animation: opacity 4s ease-in-out infinite;
+  }
+
+  #circle22 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 1.5s;
+  }
+
+  #circle23 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 3s;
+  }
+
+  #circle24 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 4.5s;
+  }
+  #circle25 {
+    animation: opacity 4s ease-in-out infinite;
+  }
+
+  #circle26 {
+    animation: opacity 4s ease-in-out infinite;
+    animation-delay: 1.5s;
+  }
+
+  @keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+  }
   
   .hero-container h1 {
     color: #FFFFFF;
@@ -341,7 +492,7 @@ nav {
   
   .hero-container h3 {
     color: #FFFFFF;
-    font-size: 26px;
+    font-size: 28px;
     margin-top: 50px;
     margin-bottom: 30px;
     font-weight: 400;
