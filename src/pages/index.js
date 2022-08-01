@@ -274,6 +274,8 @@ const IndexPage = () => {
                         <div className="col-md-4">
                             <div className="profile-first">
                                 <StaticImage src="../images/James_Hill_img.png" />
+                                <span className="accent-line line-horizontal"></span>
+                                <span className="accent-line line-vertical"></span>
                             </div>
                         </div>
                         <div className="col-md-8 profile-text">
@@ -289,6 +291,8 @@ const IndexPage = () => {
                         <div className="col-md-4 order-md-2">
                             <div className="profile-middle">
                                 <StaticImage src="../images/Callum_Randall_img.png" />
+                                <span className="accent-line line-left"></span>
+                                <span className="accent-line line-right"></span>
                             </div>
                         </div>
                         <div className="col-md-8 order-md-1 profile-text">
@@ -304,6 +308,8 @@ const IndexPage = () => {
                         <div className="col-md-4">
                             <div className="profile-last">
                                 <StaticImage src="../images/Nick_Randall_img.png" />
+                                <span className="accent-line line-horizontal-last"></span>
+                                <span className="accent-line line-vertical-last"></span>
                             </div>
                         </div>
                         <div className="col-md-8 profile-text">

@@ -850,6 +850,47 @@ nav {
 
   .profile-first, .profile-middle, .profile-last {
     width: 100%;
+    height: 100%;
+  }
+
+  .about-profiles .accent-line {
+    background: #40F5D4;
+    height: 6px;
+    width: 92%;
+    display: block;
+    position: relative;
+  }
+
+  .about-profiles .line-horizontal {
+    bottom: 14%;
+    left: -12%;
+  }
+
+  .about-profiles .line-vertical {
+    bottom: 37%;
+    left: -34%;
+    transform: rotate(90deg);
+  }
+
+  .about-profiles .line-left {
+    bottom: 41%;
+    left: -12%;
+  }
+
+  .about-profiles .line-right {
+    bottom: 50%;
+    right: -20%;
+  }
+
+  .about-profiles .line-horizontal-last {
+    right: -20%;
+    bottom: 87%;
+  }
+
+  .about-profiles .line-vertical-last {
+    bottom: 67%;
+    left: 42%;
+    transform: rotate(90deg);
   }
 
   .profile-text {
