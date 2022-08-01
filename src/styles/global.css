@@ -151,7 +151,7 @@ nav {
   }
   
   .menu-scrolling-content {
-    background: linear-gradient(180deg, #000000 31.78%, rgba(0, 0, 0, 0) 90.59%) no-repeat;
+    background: #000000;
     border-top: 2px solid rgba(255, 255, 255, 0.3);
     margin-top: 40px;
   }
@@ -762,7 +762,7 @@ nav {
   /* About */
   .about-info {
     background: #EFF9F7;
-    padding-top: 80px;
+    padding-top: 90px;
     padding-bottom: 80px;
   }
 
@@ -772,22 +772,21 @@ nav {
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 40px;
-    position: relative;
     padding-top: 10px;
     padding-bottom: 4px;
     padding-left: 30px;
     width: 160px;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
   }
 
-  .about-info .highlight-heading:before {
-    content: '';
+  .about-info #highlight {
     display: block;
     background: linear-gradient(90deg, #40F5D4 0%, #EFF9F7 92.24%);
-    width: 65%;
-    height: 70%;
+    width: 0;
+    height: 0;
     position: absolute;
     bottom: 5px;
     left: 0;
@@ -797,12 +796,38 @@ nav {
     transform: skew(-18deg);
   }
 
-  .about-info hr {
-    width: 300px;
-    border-width: 4px;
-    color: #40F5D4;
-    opacity: 1;
+  .animate-highlight {
+    animation: animate-highlight .25s ease-out forwards;
+    animation-delay: 1s;
+  }
+
+  @keyframes animate-highlight {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      width: 60%;
+      height: 70%;
+    }
+    }
+
+  .about-info .divider-small {
+    width: 25%;
+    background: #40F5D4;
+    border: 2px solid #40F5D4;
     margin: 40px auto;
+    opacity: 1;
+  }
+
+  .about-info .divider-inner {
+    height:4px;
+    width: 100%;
+  }
+
+  .about-info .animate-divider {
+    animation: first-divider 2s ease-out forwards;
+    animation-delay: 1.5s;
   }
 
   .about-container p {
