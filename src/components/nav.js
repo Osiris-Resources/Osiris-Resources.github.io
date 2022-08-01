@@ -18,7 +18,7 @@ const toggleNav = (e, setShowCollapsedNav, showCollapsedNav) => {
     setShowCollapsedNav(!showCollapsedNav)
 }
 
-const Nav = ({simpleNav, isHero}) => {
+const Nav = ({simpleNav, isHero, scrollTo}) => {
     const [showCollapsedNav, setShowCollapsedNav] = useState(false)
     return (
         <>
@@ -34,16 +34,16 @@ const Nav = ({simpleNav, isHero}) => {
                 <div className={`collapse navbar-collapse nav-collapse ${showCollapsedNav ? "show" : ""}`} id="navbarCollapse">
                     {!simpleNav ? <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/about">About Us</Link>
+                            <a className="nav-link" href="javascript:void(0)" onClick={(e) => scrollTo(e, "about")}>About Us</a>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/services">Services</Link>
+                            <a className="nav-link" href="javascript:void(0)" onClick={(e) => scrollTo(e, "services")}>Services</a>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/platform">Platform</Link>
+                            <a className="nav-link" href="javascript:void(0)" onClick={(e) => scrollTo(e, "platform")}>Platform</a>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/contact" >Contact Us</Link>
+                            <a className="nav-link" href="javascript:void(0)" onClick={(e) => scrollTo(e, "contact")}>Contact Us</a>
                         </li>
                         <li className="nav-item nav-only">
                             <a className="nav-link" href="tel:+441179410523"><FontAwesomeIcon icon={faEarthEurope} /> +44 (0) 117 941 0523</a>

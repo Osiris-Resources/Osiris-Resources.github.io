@@ -3,10 +3,16 @@ import Layout from "../components/layout"
 import { useState } from 'react'
 import { Waypoint } from 'react-waypoint'
 
+const scrollTo = (e, sectionName) => {
+    const section = document.getElementById(`${sectionName}`)
+    e.preventDefault()
+    section && section.scrollIntoView({ behavior: "smooth", block: "start" })
+  }
+
 const IndexPage = () => {
   const [isHero, setIsHero] = useState(true)
   return (
-    <Layout isArticle={false} isHero={isHero}>
+    <Layout isArticle={false} isHero={isHero} scrollTo={scrollTo}>
         <div className="hero-container">
             <div className="hero-container-sub">
                 <div className="container">
@@ -200,7 +206,7 @@ const IndexPage = () => {
                                     <h1>Data Driven Recruitment</h1>
                                     <h3>Osiris Resources is an <span>expert consultancy delivering global hiring programs</span> for clients in the <span>Telecommunication</span> and <span>Computer Networking</span> space.</h3>
                                     <div className="hero-cta">
-                                        <a className="btn" href="#">Find Out More</a>
+                                        <a className="btn" href="javascript:void(0)" onClick={(e) => scrollTo(e, "about")}>Find Out More</a>
                                         <a className="btn hero-btn-last" href="">Register Interest</a>
                                     </div>
                                 </div>
@@ -208,7 +214,7 @@ const IndexPage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+        </div>
         <Waypoint onEnter={() => setIsHero(true)} onLeave={() => setIsHero(false)} topOffset={106} />
         <div className="partners">
             <div className="container-fluid">
@@ -236,6 +242,21 @@ const IndexPage = () => {
                     </div>
                     <div className="partner-box">
                         <h6>Veea Systems</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about" className="about-container">
+            <div className="about-info">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12 text-center">
+                            <h2 className="highlight-heading">About Us</h2>
+                            <p className="text-accent">Osiris is an industry specific recruitment consultancy that supports and delivers high level recruitment partnership programmes and third party assistance. We have spent multiple years focusing solely on roles within the Telecoms / Computer Networking Industry.</p>
+                            <hr />
+                            <p>What does industry specific mean? SDN / NFV, Containerisation OS systems / Virtualization, Edge Computing / Cloud Computing (Platforms with API capability) and 5G / mmWave / RAN / Backhaul technology.
+                                We understand our technology space, the demographic of talent within our market and regularly deliver in what can be a challenging space to hire effectively and quickly.  We are confident we can drive the CAPEX and OPEX of your hiring programs down.</p>
+                        </div>
                     </div>
                 </div>
             </div>

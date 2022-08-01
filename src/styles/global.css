@@ -47,6 +47,10 @@ html, body, #gatsby-focus-wrapper, #___gatsby {
   
   .btn:focus, .btn:active:focus {
     outline: none;
+    color: #40F5D4;
+    background: transparent;
+    border: 3px solid #40F5D4;
+    box-shadow: 0px 4px 14px rgba(64, 245, 212, 0.2);
   }
 
 /* Nav */
@@ -612,6 +616,12 @@ nav {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .partners .partner-box-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
   .partners .partner-box {
     padding: 20px;
     width: 100%;
@@ -747,6 +757,62 @@ nav {
     .partners .partner-box h6 {
       font-size: 12px;
     }
+  }
+
+  /* About */
+  .about-info {
+    background: #EFF9F7;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .about-info .highlight-heading {
+    font-family: 'Cabin', sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    padding-left: 30px;
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+  }
+
+  .about-info .highlight-heading:before {
+    content: '';
+    display: block;
+    background: linear-gradient(90deg, #40F5D4 0%, #EFF9F7 92.24%);
+    width: 65%;
+    height: 70%;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    z-index: -1;
+    transition-timing-function: ease;
+    transition: .5s;
+    transform: skew(-18deg);
+  }
+
+  .about-info hr {
+    width: 300px;
+    border-width: 4px;
+    color: #40F5D4;
+    opacity: 1;
+    margin: 40px auto;
+  }
+
+  .about-container p {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .about-container .text-accent {
+    font-weight: 600;
   }
 
   /* Footer */

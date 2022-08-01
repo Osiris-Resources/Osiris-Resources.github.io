@@ -4,11 +4,11 @@ import Footer from './footer'
 import SEO from './seo'
 // import CookieBanner from './cookies'
 
-const Layout = ({ title, description, keywords, image, simpleNav, isHero, children }) => {
+const Layout = ({ title, description, keywords, image, simpleNav, isHero, scrollTo, children }) => {
   return (
     <>
       <SEO title={title} description={description} image={image} keywords={keywords} />
-      <Nav simpleNav={simpleNav} isHero={isHero} />
+      <Nav simpleNav={simpleNav} isHero={isHero} scrollTo={scrollTo} />
       <main>
         {children}
         <Footer />
