@@ -822,19 +822,9 @@ nav {
   .about-info .divider-small {
     width: 25%;
     background: #40F5D4;
-    border: 2px solid #40F5D4;
+    border: 3px solid #40F5D4;
     margin: 40px auto;
     opacity: 1;
-  }
-
-  .about-info .divider-inner {
-    height:4px;
-    width: 100%;
-  }
-
-  .about-info .animate-divider {
-    animation: first-divider 2s ease-out forwards;
-    animation-delay: 1.5s;
   }
 
   .about-container p {
@@ -851,6 +841,40 @@ nav {
 
   .about-container .text-accent {
     font-weight: 600;
+  }
+
+  .about-profiles {
+    margin-top: 110px;
+  }
+
+  .profile-first, .profile-first svg {
+    width: 100%;
+  }
+
+  .profile-first {
+    position: relative;
+    left: -8%;
+  }
+
+  .profile-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-text-container {
+    margin-top: -24px;
+  }
+
+  .about-profiles h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .about-profiles h6 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #525252;
   }
 
   /* Footer */
