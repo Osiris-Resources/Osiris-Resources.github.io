@@ -845,24 +845,16 @@ nav {
 
   .about-profiles {
     margin-top: 110px;
+    margin-bottom: 110px;
   }
 
-  .profile-first, .profile-first svg {
+  .profile-first, .profile-middle, .profile-last {
     width: 100%;
-  }
-
-  .profile-first {
-    position: relative;
-    left: -8%;
   }
 
   .profile-text {
     display: flex;
     align-items: center;
-  }
-
-  .profile-text-container {
-    margin-top: -24px;
   }
 
   .about-profiles h5 {
