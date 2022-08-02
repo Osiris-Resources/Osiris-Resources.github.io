@@ -16,6 +16,13 @@ const highlightAnimation = (isActiveSection, highlightId) => {
     isActiveSection ? highlight.classList.add("animate-highlight") : highlight.classList.remove("animate-highlight")
 }
 
+const lineAnimation = (isActiveProfile, lineOneId, lineTwoId, animationTypeOne, animationTypeTwo) => {
+    const lineOne = document.getElementById(`${lineOneId}`)
+    const lineTwo = document.getElementById(`${lineTwoId}`)
+    isActiveProfile ? lineOne.classList.add(`${animationTypeOne}`) : lineOne.classList.remove(`${animationTypeOne}`)
+    isActiveProfile ? lineTwo.classList.add(`${animationTypeTwo}`) : lineTwo.classList.remove(`${animationTypeTwo}`)
+}
+
 const IndexPage = () => {
   const [isHero, setIsHero] = useState(true)
   return (
@@ -272,57 +279,63 @@ const IndexPage = () => {
             </Waypoint>
             <div className="about-profiles">
                 <div className="container">
-                    <div className="row mb-5">
-                        <div className="col-md-4">
-                            <div className="profile-first">
-                                <StaticImage src="../images/James_Hill_img.png" />
-                                <span className="accent-line line-horizontal line-animation line-animation-l"></span>
-                                <span className="accent-line line-vertical line-animation-r"></span>
+                    <Waypoint onEnter={() => lineAnimation(true, "lineHorizontal", "lineVertical", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation(false, "lineHorizontal", "lineVertical", "line-animation-l", "line-animation-r")}>
+                        <div className="row mb-5">
+                            <div className="col-md-4">
+                                <div className="profile-first">
+                                    <StaticImage src="../images/James_Hill_img.png" />
+                                    <span id="lineHorizontal" className="accent-line line-horizontal"></span>
+                                    <span id="lineVertical" className="accent-line line-vertical"></span>
+                                </div>
+                            </div>
+                            <div className="col-md-8 profile-text">
+                                <div className="profile-text-container ms-5">
+                                    <h5>James Hill</h5>
+                                    <h6 className="mb-5">Director</h6>
+                                    <p>Osiris Resources was started by James who recognised the need for an expert consultancy in a growingly saturated and niche market. James has worked directly for SME’s and large corporations delivering talent solutions for the Telco market and also has experience delivering business operations and running enterprise sales programmes.</p>
+                                    <p>He is passionate about maintaining and building further an already existing ecosystem in the Telecoms and Computer Networking industry.</p>
+                                </div>
                             </div>
                         </div>
-                        <div className="col-md-8 profile-text">
-                            <div className="profile-text-container ms-5">
-                                <h5>James Hill</h5>
-                                <h6 className="mb-5">Director</h6>
-                                <p>Osiris Resources was started by James who recognised the need for an expert consultancy in a growingly saturated and niche market. James has worked directly for SME’s and large corporations delivering talent solutions for the Telco market and also has experience delivering business operations and running enterprise sales programmes.</p>
-                                <p>He is passionate about maintaining and building further an already existing ecosystem in the Telecoms and Computer Networking industry.</p>
+                    </Waypoint>
+                    <Waypoint onEnter={() => lineAnimation(true, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation(false, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")}>
+                        <div className="row mt-5 mb-5">
+                            <div className="col-md-4 order-md-2">
+                                <div className="profile-middle">
+                                    <StaticImage src="../images/Callum_Randall_img.png" />
+                                    <span id="lineLeft" className="accent-line line-left"></span>
+                                    <span id="lineRight" className="accent-line line-right"></span>
+                                </div>
+                            </div>
+                            <div className="col-md-8 order-md-1 profile-text">
+                                <div className="profile-text-container me-5">
+                                    <h5>Callum Randall</h5>
+                                    <h6 className="mb-5">Telco / Networking Consultant</h6>
+                                    <p>Callum has made a huge impact on the development of Osiris Resources after only half a year in industry thus far. Previously he was a Royal Marine recruit where skills such as tenacity, resilience and hard work were learnt in a unique environment.</p>
+                                    <p>Quickly learning and developing himself in the world of Telco he is responsible for sourcing and delivery across our client portfolio. In his spare time Callum likes to train in mixed martial arts and boxing as well as attending music festivals.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="row mt-5 mb-5">
-                        <div className="col-md-4 order-md-2">
-                            <div className="profile-middle">
-                                <StaticImage src="../images/Callum_Randall_img.png" />
-                                <span className="accent-line line-left line-animation-l"></span>
-                                <span className="accent-line line-right line-animation-r"></span>
+                    </Waypoint>
+                    <Waypoint onEnter={() => lineAnimation(true, "lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} onLeave={() => lineAnimation(false, "lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")}>
+                        <div className="row mt-5">
+                            <div className="col-md-4">
+                                <div className="profile-last">
+                                    <StaticImage src="../images/Nick_Randall_img.png" />
+                                    <span id="lineHorizontalLast" className="accent-line line-horizontal-last"></span>
+                                    <span id="lineVerticalLast" className="accent-line line-vertical-last"></span>
+                                </div>
+                            </div>
+                            <div className="col-md-8 profile-text">
+                                <div className="profile-text-container ms-5">
+                                    <h5>Nick Randall</h5>
+                                    <h6 className="mb-5">Non Exec Director</h6>
+                                    <p>Nick has had a positive impact on Osiris Resources since around 2017 before the company started. Coaching and mentoring a young sales executive (James) in the industry and developing in general his skills, he has been an asset and continues to offer the same services and advice as he has done for many years.</p>
+                                    <p>Nick is a Telco guy through and through, being a techie himself, holding various senior sales positions at global companies and finally being CEO of his company locally in the South West.</p>
+                                </div>
                             </div>
                         </div>
-                        <div className="col-md-8 order-md-1 profile-text">
-                            <div className="profile-text-container me-5">
-                                <h5>Callum Randall</h5>
-                                <h6 className="mb-5">Telco / Networking Consultant</h6>
-                                <p>Callum has made a huge impact on the development of Osiris Resources after only half a year in industry thus far. Previously he was a Royal Marine recruit where skills such as tenacity, resilience and hard work were learnt in a unique environment.</p>
-                                <p>Quickly learning and developing himself in the world of Telco he is responsible for sourcing and delivery across our client portfolio. In his spare time Callum likes to train in mixed martial arts and boxing as well as attending music festivals.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row mt-5">
-                        <div className="col-md-4">
-                            <div className="profile-last">
-                                <StaticImage src="../images/Nick_Randall_img.png" />
-                                <span className="accent-line line-horizontal-last line-animation-r"></span>
-                                <span className="accent-line line-vertical-last line-animation-l"></span>
-                            </div>
-                        </div>
-                        <div className="col-md-8 profile-text">
-                            <div className="profile-text-container ms-5">
-                                <h5>Nick Randall</h5>
-                                <h6 className="mb-5">Non Exec Director</h6>
-                                <p>Nick has had a positive impact on Osiris Resources since around 2017 before the company started. Coaching and mentoring a young sales executive (James) in the industry and developing in general his skills, he has been an asset and continues to offer the same services and advice as he has done for many years.</p>
-                                <p>Nick is a Telco guy through and through, being a techie himself, holding various senior sales positions at global companies and finally being CEO of his company locally in the South West.</p>
-                            </div>
-                        </div>
-                    </div>
+                    </Waypoint>
                 </div>
             </div>
         </div>
