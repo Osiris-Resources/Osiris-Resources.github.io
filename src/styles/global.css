@@ -995,10 +995,61 @@ nav {
     bottom: 87%;
   }
 
+  @media screen and (max-width: 1199.20px) {
+    .about-profiles .line-horizontal-last {
+      bottom: 67%;
+    }
+  }
+
+  @media screen and (max-width: 991.20px) {
+    .about-profiles .line-horizontal-last {
+      bottom: 36%;
+    }
+  }
+
+  @media screen and (max-width: 767.20px) {
+    .about-profiles .line-horizontal-last {
+      bottom: 86%;
+      right: -14%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .about-profiles .line-horizontal-last {
+      right: -9%;
+    }
+  }
+
   .about-profiles .line-vertical-last {
     bottom: 63%;
     left: 42%;
     transform: rotate(90deg);
+  }
+
+  @media screen and (max-width: 1199.20px) {
+    .about-profiles .line-vertical-last {
+      bottom: 49%;
+    }
+  }
+
+  @media screen and (max-width: 991.20px) {
+    .about-profiles .line-vertical-last {
+      left: 41%;
+      bottom: 27%;
+    }
+  }
+
+  @media screen and (max-width: 767.20px) {
+    .about-profiles .line-vertical-last {
+      left: 40%;
+      bottom: 61%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .about-profiles .line-vertical-last {
+      bottom: 57%;
+    }
   }
 
   .profile-text {
@@ -1006,7 +1057,7 @@ nav {
     align-items: center;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.20px) {
     .about-profiles .row:nth-child(1) .profile-text-container, .about-profiles .row:nth-child(2) .profile-text-container {
       margin-bottom: 60px;
     } 
