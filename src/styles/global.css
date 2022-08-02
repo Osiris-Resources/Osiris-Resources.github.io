@@ -935,9 +935,59 @@ nav {
     left: -8%;
   }
 
+  @media screen and (max-width: 1199.20px) {
+    .about-profiles .line-left {
+      bottom: 32%;
+    }
+  }
+
+  @media screen and (max-width: 991.20px) {
+    .about-profiles .line-left {
+      bottom: 16%;
+    }
+  }
+
+  @media screen and (max-width: 767.20px) {
+    .about-profiles .line-left {
+      left: -6%;
+      bottom: 40%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .about-profiles .line-left {
+      left: -1%;
+    }
+  }
+
   .about-profiles .line-right {
     bottom: 50%;
     right: -16%;
+  }
+
+  @media screen and (max-width: 1199.20px) {
+    .about-profiles .line-right {
+      bottom: 40%;
+    }
+  }
+
+  @media screen and (max-width: 991.20px) {
+    .about-profiles .line-right {
+      bottom: 21%;
+    }
+  }
+
+  @media screen and (max-width: 767.20px) {
+    .about-profiles .line-right {
+      right: -14%;
+      bottom: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .about-profiles .line-right {
+      right: -9%;
+    }
   }
 
   .about-profiles .line-horizontal-last {
@@ -969,6 +1019,10 @@ nav {
   }
 
   @media screen and (max-width: 600px) {
+    .about-profiles .row:nth-child(1) .profile-text-container, .about-profiles .row:nth-child(2) .profile-text-container {
+      margin-bottom: 40px;
+    }
+
     .profile-text-container {
       margin-left: 0 !important;
       margin-right: 0 !important;
