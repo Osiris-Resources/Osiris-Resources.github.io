@@ -276,8 +276,8 @@ const IndexPage = () => {
                         <div className="col-md-4">
                             <div className="profile-first">
                                 <StaticImage src="../images/James_Hill_img.png" />
-                                <span className="accent-line line-horizontal"></span>
-                                <span className="accent-line line-vertical"></span>
+                                <span className="accent-line line-horizontal line-animation line-animation-l"></span>
+                                <span className="accent-line line-vertical line-animation-r"></span>
                             </div>
                         </div>
                         <div className="col-md-8 profile-text">
@@ -293,8 +293,8 @@ const IndexPage = () => {
                         <div className="col-md-4 order-md-2">
                             <div className="profile-middle">
                                 <StaticImage src="../images/Callum_Randall_img.png" />
-                                <span className="accent-line line-left"></span>
-                                <span className="accent-line line-right"></span>
+                                <span className="accent-line line-left line-animation-l"></span>
+                                <span className="accent-line line-right line-animation-r"></span>
                             </div>
                         </div>
                         <div className="col-md-8 order-md-1 profile-text">
@@ -310,8 +310,8 @@ const IndexPage = () => {
                         <div className="col-md-4">
                             <div className="profile-last">
                                 <StaticImage src="../images/Nick_Randall_img.png" />
-                                <span className="accent-line line-horizontal-last"></span>
-                                <span className="accent-line line-vertical-last"></span>
+                                <span className="accent-line line-horizontal-last line-animation-r"></span>
+                                <span className="accent-line line-vertical-last line-animation-l"></span>
                             </div>
                         </div>
                         <div className="col-md-8 profile-text">

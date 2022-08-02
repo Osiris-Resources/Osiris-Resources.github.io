@@ -887,11 +887,40 @@ nav {
     width: 92%;
     display: block;
     position: relative;
+    clip-path: inset(0 0 0 100%);
   }
 
   .about-profiles .line-horizontal {
     bottom: 14%;
     left: -8%;
+  }
+
+  .about-profiles .line-animation-l {
+    animation: clip-line-left .5s ease-in forwards;
+    animation-delay: 1.5s;
+  }
+
+  .about-profiles .line-animation-r {
+    animation: clip-line-right .5s ease-in forwards;
+    animation-delay: 1.5s;
+  }
+
+  @keyframes clip-line-left {
+    0% {
+      clip-path: inset(0 100% 0 0);
+    }
+    100% {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  @keyframes clip-line-right {
+    0% {
+      clip-path: inset(0 0 0 100%);
+    }
+    100% {
+      clip-path: inset(0 0 0 0);
+    }
   }
 
   @media screen and (max-width: 1199.20px) {
