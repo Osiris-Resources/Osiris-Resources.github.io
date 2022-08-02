@@ -19,11 +19,12 @@ const IndexPage = () => {
   const [isHero, setIsHero] = useState(true)
   return (
     <Layout isArticle={false} isHero={isHero} scrollTo={scrollTo}>
-        <div className="hero-container">
-            <div className="hero-container-sub">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6 order-lg-2">
+        <Waypoint onEnter={() => setIsHero(true)} onLeave={() => setIsHero(false)}>
+            <div className="hero-container">
+                <div className="hero-container-sub">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-6 order-lg-2">
                                 <div className="hero-image">
                                     <div className="hero-image-container">
                                         <svg viewBox="0 0 409 390" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -220,8 +221,8 @@ const IndexPage = () => {
                         </div>
                     </div>
                 </div>
-        </div>
-        <Waypoint onEnter={() => setIsHero(true)} onLeave={() => setIsHero(false)} />
+            </div>
+        </Waypoint>
         <div className="partners">
             <div className="container-fluid">
                 <div className="row partner-box-container">
