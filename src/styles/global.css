@@ -64,7 +64,7 @@ nav {
     height: 40px;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.20px) {
     .top-menu-scrolling-hero {
         display: none;
       }
@@ -75,7 +75,7 @@ nav {
     height: 40px;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.20px) {
     .top-menu-scrolling-content {
         display: none;
       }
@@ -92,7 +92,7 @@ nav {
     margin-bottom: -1px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1199.20px) {
     .nav-only {
         display: none;
     }
@@ -116,7 +116,7 @@ nav {
     color: #40F5D4;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.20px) {
     .nav-social {
         width: 180px;
         margin-top: 10px;
@@ -132,7 +132,7 @@ nav {
     margin-bottom: -3px;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.20px) {
     .nav-social a {
         font-size: 22px;
     }
@@ -144,7 +144,7 @@ nav {
     margin-top: 40px;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.20px) {
     .menu-scrolling-hero {
         margin-top: 0;
     }
@@ -156,7 +156,7 @@ nav {
     margin-top: 40px;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.20px) {
     .menu-scrolling-content {
         margin-top: 0;
     }
@@ -166,7 +166,7 @@ nav {
     padding: 12px 1rem;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.20px) {
     .navbar {
         /* background: linear-gradient(180deg, #000000 31.78%, rgba(0, 0, 0, 0) 90.59%) no-repeat; */
         background: #000000;
@@ -180,7 +180,7 @@ nav {
     bottom: 2px;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.20px) {
     .navbar-brand img {
       bottom: -1px;
     }
@@ -199,13 +199,13 @@ nav {
     box-shadow: none;
   }
   
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.20px) {
     .tog-container {
         width: 100%;
     }
   }
   
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.20px) {
     .navbar-dark .navbar-toggler {
         float: right;
         border-color: #FFFFFF;
@@ -251,7 +251,7 @@ nav {
     height: 70%;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.20px) {
     .navbar-dark .navbar-nav .nav-link {
         width: 140px;
         padding-right: 30px;
@@ -264,7 +264,7 @@ nav {
     bottom: 6px !important;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.20px) {
     .nav-only .nav-link {
         width: 250px !important;
       }
@@ -508,7 +508,7 @@ nav {
     font-weight: 600;
   }
   
-  @media screen and (min-width: 601px) and (max-width: 1199px) {
+  @media screen and (min-width: 601px) and (max-width: 1199.20px) {
     .hero-container h1 {
         font-size: 38px;
     }
@@ -559,7 +559,7 @@ nav {
     width: 230px
   }
   
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
+  @media screen and (min-width: 992px) and (max-width: 1199.20px) {
     .hero-container a {
         display: block;
         margin: 0 0 25px 0;
@@ -584,7 +584,7 @@ nav {
     margin: 0 24px;
   }
   
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
+  @media screen and (min-width: 992px) and (max-width: 1199.20px) {
     .hero-container .hero-btn-last {
         display: block;
         margin: 0;
@@ -853,6 +853,14 @@ nav {
     height: 100%;
   }
 
+  @media screen and (max-width: 600px) {
+    .profile-first {
+      width: 98%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   .about-profiles .accent-line {
     background: #40F5D4;
     height: 6px;
@@ -863,32 +871,82 @@ nav {
 
   .about-profiles .line-horizontal {
     bottom: 14%;
-    left: -12%;
+    left: -8%;
+  }
+
+  @media screen and (max-width: 1199.20px) {
+    .about-profiles .line-horizontal {
+      bottom: 10%;
+    }
+  }
+
+  @media screen and (max-width: 991.20px) {
+    .about-profiles .line-horizontal {
+      bottom: 7%;
+    }
+  }
+
+  @media screen and (max-width: 767.20px) {
+    .about-profiles .line-horizontal {
+      left: -5%;
+      bottom: 16%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .about-profiles .line-horizontal {
+      left: -1%;
+    }
   }
 
   .about-profiles .line-vertical {
-    bottom: 37%;
+    bottom: 41%;
     left: -34%;
     transform: rotate(90deg);
   }
 
+  @media screen and (max-width: 1199.20px) {
+    .about-profiles .line-vertical {
+      bottom: 29%;
+    }
+  }
+
+  @media screen and (max-width: 991.20px) {
+    .about-profiles .line-vertical {
+      left: -32%;
+      bottom: 19%;
+    }
+  }
+
+  @media screen and (max-width: 767.20px) {
+    .about-profiles .line-vertical {
+      bottom: 43%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .about-profiles .line-vertical {
+      bottom: 47%;
+    }
+  }
+
   .about-profiles .line-left {
     bottom: 41%;
-    left: -12%;
+    left: -8%;
   }
 
   .about-profiles .line-right {
     bottom: 50%;
-    right: -20%;
+    right: -16%;
   }
 
   .about-profiles .line-horizontal-last {
-    right: -20%;
+    right: -16%;
     bottom: 87%;
   }
 
   .about-profiles .line-vertical-last {
-    bottom: 67%;
+    bottom: 63%;
     left: 42%;
     transform: rotate(90deg);
   }
@@ -896,6 +954,27 @@ nav {
   .profile-text {
     display: flex;
     align-items: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    .about-profiles .row:nth-child(1) .profile-text-container, .about-profiles .row:nth-child(2) .profile-text-container {
+      margin-bottom: 60px;
+    } 
+
+    .profile-text-container {
+      margin-top: 40px;
+      margin-left: 24px !important;
+      margin-right: 24px !important;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .profile-text-container {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   .about-profiles h5 {

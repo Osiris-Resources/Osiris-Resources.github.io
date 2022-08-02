@@ -279,7 +279,7 @@ const IndexPage = () => {
                             </div>
                         </div>
                         <div className="col-md-8 profile-text">
-                            <div className="profile-text-container">
+                            <div className="profile-text-container ms-5">
                                 <h5>James Hill</h5>
                                 <h6 className="mb-5">Director</h6>
                                 <p>Osiris Resources was started by James who recognised the need for an expert consultancy in a growingly saturated and niche market. James has worked directly for SME’s and large corporations delivering talent solutions for the Telco market and also has experience delivering business operations and running enterprise sales programmes.</p>
@@ -296,7 +296,7 @@ const IndexPage = () => {
                             </div>
                         </div>
                         <div className="col-md-8 order-md-1 profile-text">
-                            <div className="profile-text-container">
+                            <div className="profile-text-container me-5">
                                 <h5>Callum Randall</h5>
                                 <h6 className="mb-5">Telco / Networking Consultant</h6>
                                 <p>Callum has made a huge impact on the development of Osiris Resources after only half a year in industry thus far. Previously he was a Royal Marine recruit where skills such as tenacity, resilience and hard work were learnt in a unique environment.</p>
@@ -313,7 +313,7 @@ const IndexPage = () => {
                             </div>
                         </div>
                         <div className="col-md-8 profile-text">
-                            <div className="profile-text-container">
+                            <div className="profile-text-container ms-5">
                                 <h5>Nick Randall</h5>
                                 <h6 className="mb-5">Non Exec Director</h6>
                                 <p>Nick has had a positive impact on Osiris Resources since around 2017 before the company started. Coaching and mentoring a young sales executive (James) in the industry and developing in general his skills, he has been an asset and continues to offer the same services and advice as he has done for many years.</p>
