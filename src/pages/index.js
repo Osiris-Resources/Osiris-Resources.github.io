@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import { useState } from 'react'
 import { Waypoint } from 'react-waypoint'
 import { StaticImage } from 'gatsby-plugin-image'
+import CtaSection from "../components/cta"
 
 const scrollTo = (e, sectionName) => {
     const section = document.getElementById(`${sectionName}`)
@@ -10,8 +11,8 @@ const scrollTo = (e, sectionName) => {
     section && section.scrollIntoView({ behavior: "smooth", block: "start" })
 }
 
-const highlightAnimation = (isActiveSection) => {
-    const highlight = document.getElementById("highlight")
+const highlightAnimation = (isActiveSection, highlightId) => {
+    const highlight = document.getElementById(`${highlightId}`)
     isActiveSection ? highlight.classList.add("animate-highlight") : highlight.classList.remove("animate-highlight")
 }
 
@@ -254,7 +255,7 @@ const IndexPage = () => {
             </div>
         </div>
         <div id="about" className="about-container">
-            <Waypoint onEnter={() => highlightAnimation(true)} onLeave={() => highlightAnimation(false)}>
+            <Waypoint onEnter={() => highlightAnimation(true, "highlight")} onLeave={() => highlightAnimation(false, "highlight")}>
                 <div className="about-info">
                     <div className="container">
                         <div className="row">
@@ -325,6 +326,7 @@ const IndexPage = () => {
                 </div>
             </div>
         </div>
+        <CtaSection highlightAnimation={highlightAnimation} />
     </Layout>
   )
 }
