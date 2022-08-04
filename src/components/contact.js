@@ -22,10 +22,10 @@ const ContactSection = ({highlightAnimation}) => {
                         </div>
                     </div>
                     <div className="row contact-info-main">
-                        <div className="col-md-4">
+                        <div className="col-lg-4">
                             <a href="mailto:info@osirisresources.com"><h5>info[@]osirisresources.com</h5></a>
                         </div>
-                        <div className="col-md-4 text-center social-footer">
+                        <div className="col-lg-4 text-center social-footer">
                             <a href="/">
                                 <FontAwesomeIcon icon={faFacebookSquare} />
                             </a>
@@ -36,7 +36,7 @@ const ContactSection = ({highlightAnimation}) => {
                                 <FontAwesomeIcon icon={faTwitterSquare} />
                             </a>
                         </div>
-                        <div className="col-md-4 text-end">
+                        <div className="col-lg-4 text-end">
                             <a className="btn btn-content" href="mailto:info@osirisresources.com">Send Us A Message</a>
                         </div>
                     </div>
