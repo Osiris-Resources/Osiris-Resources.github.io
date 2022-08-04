@@ -331,8 +331,8 @@ const IndexPage = () => {
                                 <div className="profile-text-container ms-5">
                                     <h5>Nick Randall</h5>
                                     <h6 className="mb-5">Non Exec Director</h6>
-                                    <p>Nick has had a positive impact on Osiris Resources since around 2017 before the company started. Coaching and mentoring a young sales executive (James) in the industry and developing in general his skills, he has been an asset and continues to offer the same services and advice as he has done for many years.</p>
-                                    <p>Nick is a Telco guy through and through, being a techie himself, holding various senior sales positions at global companies and finally being CEO of his company locally in the South West.</p>
+                                    <p>Nick advises Osiris Resources, helping us with mentoring, coaching and general business management. He is CEO of NetMinded, a Bristol-based Networking start-up. Osiris Resources enjoys working with innovative companies such as NetMinded.</p>
+                                    <p>Our passion is supporting and championing the general Telco / Networking ecosystem. It is this passion and experience that makes us different. </p>
                                 </div>
                             </div>
                         </div>
