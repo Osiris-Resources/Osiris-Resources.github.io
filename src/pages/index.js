@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Waypoint } from 'react-waypoint'
 import { StaticImage } from 'gatsby-plugin-image'
 import CtaSection from "../components/cta"
+import ContactSection from "../components/contact"
 
 const scrollTo = (e, sectionName) => {
     const section = document.getElementById(`${sectionName}`)
@@ -222,7 +223,7 @@ const IndexPage = () => {
                                     <h3>Osiris Resources is an <span>expert consultancy delivering global hiring programs</span> for clients in the <span>Telecommunication</span> and <span>Computer Networking</span> space.</h3>
                                     <div className="hero-cta">
                                         <a className="btn" href="javascript:void(0)" onClick={(e) => scrollTo(e, "about")}>Find Out More</a>
-                                        <a className="btn hero-btn-last" href="">Register Interest</a>
+                                        <a className="btn hero-btn-last" href="#">Register Interest</a>
                                     </div>
                                 </div>
                             </div>
@@ -340,6 +341,7 @@ const IndexPage = () => {
             </div>
         </div>
         <CtaSection highlightAnimation={highlightAnimation} />
+        <ContactSection highlightAnimation={highlightAnimation} />
     </Layout>
   )
 }
