@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import { useState } from 'react'
 import { Waypoint } from 'react-waypoint'
 import { StaticImage } from 'gatsby-plugin-image'
+import ServicesSwiper from "../components/services-swiper"
 import CtaSection from "../components/cta"
 import ContactSection from "../components/contact"
 
@@ -268,7 +269,7 @@ const IndexPage = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-12 text-center">
-                            <h2 className="highlight-heading"><span id="highlight"></span>About Us</h2>
+                                <h2 className="highlight-heading"><span id="highlight"></span>About Us</h2>
                                 <p className="text-accent">Osiris is an industry specific recruitment consultancy that supports and delivers high level recruitment partnership programmes and third party assistance. We have spent multiple years focusing solely on roles within the Telecoms / Computer Networking Industry.</p>
                                 <hr className="divider-small"></hr>
                                 <p>What does industry specific mean? SDN / NFV, Containerisation OS systems / Virtualization, Edge Computing / Cloud Computing (Platforms with API capability) and 5G / mmWave / RAN / Backhaul technology.
@@ -337,6 +338,41 @@ const IndexPage = () => {
                             </div>
                         </div>
                     </Waypoint>
+                </div>
+            </div>
+        </div>
+        <div id="services" className="services-container">
+            <div className="container">
+                <div className="row">
+                    <div className="col-12 text-center">
+                        <h2 className="highlight-heading"><span id="highlightServices"></span>Services</h2>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-lg-4">
+                        <div className="services-panel">
+                            <span>1.</span>
+                            <h6>Retain Us</h6>
+                            <ServicesSwiper />
+                        </div>
+                    </div>
+                    <div className="col-lg-4">
+                        <div className="services-panel">
+                            <span>2.</span>
+                            <h6>Permanent & Contract Hiring Solutions</h6>
+                            <p><span></span>Third party hiring model</p>
+                            <p><span></span>Contract with agreed fees, terms & conditions</p>
+                            <p><span></span>Bespoke database with large number of skilled contractors for hire</p>
+                        </div>
+                    </div>
+                    <div className="col-lg-4">
+                        <div className="services-panel">
+                            <span>3.</span>
+                            <h6>Lead generation Services for SME’s</h6>
+                            <p>What makes us different?</p>
+                            <p>We believe that a Talent partner can and should do more than just deliver on hiring programmes. In our experience with the activity that gets conducted we are very well placed to monitor and actively seek new leads for SME’s who are looking to build market presence, channel partner programmes and general sales activity. We just want to be on the ball for our client portfolio.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
