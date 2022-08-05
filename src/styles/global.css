@@ -1142,9 +1142,87 @@ nav {
   }
 
   /* Services */
-.services-panel {
-  min-height: 500px;
-}
+  .services-container {
+    width: 100%;
+    background: url(../images/Osiris_Background.png) bottom center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    color: #FFFFFF;
+  }
+
+  @media screen and (max-width: 600px) {
+    .services-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .services-container .col-lg-6 {
+    align-self: center;
+  }
+
+  .services-panel {
+    min-height: 500px;
+    background: linear-gradient(162.33deg, rgba(64, 245, 212, 0.4) 12.4%, rgba(255, 255, 255, 0.1) 83.24%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 70, 130, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+    backdrop-filter: blur(25px);
+    position: relative;
+  }
+
+  .services-container .row:nth-child(2) .col-lg-4:nth-child(2) .services-panel {
+    background: linear-gradient(162.33deg, rgba(255, 255, 255, 0.1) 12.4%, rgba(15, 79, 226, 0.4) 83.24%);
+  }
+
+  .services-panel .panel-number {
+    position: absolute;
+    left: calc(50% - 76px);
+    bottom: 424px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .services-panel .panel-number svg {
+    width: 140px;
+    height: 140px;
+  }
+
+  .services-panel #Green_Accent_One {
+    animation: rotate-green-accent .7s ease-in forwards;
+    animation-delay: 1s;
+    transform: rotate(0deg);
+    transform-origin: 54px 51px;
+  }
+
+  .services-panel #Green_Accent_Two {
+    animation: rotate-green-accent .7s ease-in forwards;
+    animation-delay: 1s;
+    transform: rotate(0deg);
+    transform-origin: 54px 51px;
+  }
+
+  .services-panel #Green_Accent_Three {
+    animation: rotate-green-accent .7s ease-in forwards;
+    animation-delay: 1s;
+    transform: rotate(0deg);
+    transform-origin: 54px 51px;
+  }
+
+  @keyframes rotate-green-accent {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: 54px 51px;
+    }
+    100% {
+      transform: rotate(360deg);
+      transform-origin: 54px 51px;
+    }
+  }
 
   .swiper {
     width: 100%;

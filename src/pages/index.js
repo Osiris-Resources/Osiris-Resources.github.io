@@ -351,14 +351,74 @@ const IndexPage = () => {
                 <div className="row">
                     <div className="col-lg-4">
                         <div className="services-panel">
-                            <span>1.</span>
+                            <span className="panel-number">
+                                <svg viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Number_One">
+                                    <path id="Green_Accent_One" fillRule="evenodd" clipRule="evenodd" d="M92 51C92 30.5655 75.4345 14 55 14L55 51L92 51Z" fill="#40F5D4"/>
+                                    <g id="Circle_one" filter="url(#filter0_d_178_3)">
+                                    <circle cx="55" cy="51" r="32" fill="url(#paint0_linear_178_3)"/>
+                                    </g>
+                                    <g id="1.">
+                                    <path d="M50.389 63.619V43.897C49.895 44.2137 49.3693 44.4924 48.812 44.733C48.2673 44.9737 47.6783 45.151 47.045 45.265L46.627 41.161C47.1716 41.047 47.7796 40.7747 48.451 40.344C49.1223 39.9134 49.743 39.4067 50.313 38.824C50.883 38.2287 51.2883 37.627 51.529 37.019H55.253V63.619H50.389Z" fill="white"/>
+                                    <path d="M60.6923 63.619V58.451H65.6323V63.619H60.6923Z" fill="white"/>
+                                    </g>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_178_3" x="0" y="0" width="110" height="110" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect1_dropShadow_178_3"/>
+                                    <feOffset dy="4"/>
+                                    <feGaussianBlur stdDeviation="12"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.309804 0 0 0 0 0.886275 0 0 0 0.2 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_178_3"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_178_3" result="shape"/>
+                                    </filter>
+                                    <linearGradient id="paint0_linear_178_3" x1="34.8095" y1="27.7619" x2="87" y2="76.1429" gradientUnits="userSpaceOnUse">
+                                    <stop stopColor="#B6B8BF"/>
+                                    <stop offset="1" stopColor="#54868B"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                            </span>
                             <h6>Retain Us</h6>
                             <ServicesSwiper />
                         </div>
                     </div>
                     <div className="col-lg-4">
                         <div className="services-panel">
-                            <span>2.</span>
+                            <span className="panel-number">
+                                <svg viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Number_Two">
+                                    <path id="Green_Accent_Two" fillRule="evenodd" clipRule="evenodd" d="M55 87.9912C75.4345 87.9912 92 71.4257 92 50.9912L55 50.9912L55 87.9912Z" fill="#40F5D4"/>
+                                    <g id="Circle_Two" filter="url(#filter0_d_186_14)">
+                                    <circle cx="55" cy="51" r="32" fill="url(#paint0_linear_186_14)"/>
+                                    </g>
+                                    <g id="2.">
+                                    <path d="M43.5469 63.6193L50.5389 52.8653C51.4635 51.4466 52.2045 50.2496 52.7619 49.2743C53.3319 48.299 53.7435 47.444 53.9969 46.7093C54.2502 45.9746 54.3769 45.2526 54.3769 44.5433C54.3769 43.454 54.0665 42.599 53.4459 41.9783C52.8379 41.3576 51.9829 41.0473 50.8809 41.0473C49.5509 41.0473 48.3539 41.3766 47.2899 42.0353C46.2385 42.694 45.2949 43.4413 44.4589 44.2773L43.8509 39.3753C44.9909 38.4633 46.2005 37.754 47.4799 37.2473C48.7719 36.7406 50.2349 36.4873 51.8689 36.4873C53.4775 36.4873 54.8139 36.8166 55.8779 37.4753C56.9545 38.134 57.7589 39.008 58.2909 40.0973C58.8229 41.1866 59.0889 42.3773 59.0889 43.6693C59.0889 44.67 58.9495 45.677 58.6709 46.6903C58.3922 47.691 57.9299 48.8056 57.2839 50.0343C56.6505 51.2503 55.7955 52.6753 54.7189 54.3093L51.6029 59.0593H60.0389V63.6193H43.5469Z" fill="white"/>
+                                    <path d="M63.7362 63.6193V58.4513H68.6762V63.6193H63.7362Z" fill="white"/>
+                                    </g>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_186_14" x="0" y="0" width="110" height="110" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect1_dropShadow_186_14"/>
+                                    <feOffset dy="4"/>
+                                    <feGaussianBlur stdDeviation="12"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.309804 0 0 0 0 0.886275 0 0 0 0.2 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_186_14"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_186_14" result="shape"/>
+                                    </filter>
+                                    <linearGradient id="paint0_linear_186_14" x1="34.8095" y1="27.7619" x2="87" y2="76.1429" gradientUnits="userSpaceOnUse">
+                                    <stop stopColor="#B6B7C0"/>
+                                    <stop offset="1" stopColor="#53707D"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                            </span>
                             <h6>Permanent & Contract Hiring Solutions</h6>
                             <p><span></span>Third party hiring model</p>
                             <p><span></span>Contract with agreed fees, terms & conditions</p>
@@ -367,7 +427,37 @@ const IndexPage = () => {
                     </div>
                     <div className="col-lg-4">
                         <div className="services-panel">
-                            <span>3.</span>
+                            <span className="panel-number">
+                                <svg viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Number_Three">
+                                    <path id="Green_Accent_Three" fillRule="evenodd" clipRule="evenodd" d="M18 51C18 71.4345 34.5655 88 55 88L55 51L18 51Z" fill="#40F5D4"/>
+                                    <g id="Circle_Three" filter="url(#filter0_d_186_24)">
+                                    <circle cx="55" cy="51" r="32" fill="url(#paint0_linear_186_24)"/>
+                                    </g>
+                                    <g id="3.">
+                                    <path d="M51.4665 63.1513C49.8705 63.1513 48.4201 62.9676 47.1155 62.6003C45.8108 62.2203 44.7658 61.834 43.9805 61.4413L45.1585 57.3373C45.9945 57.7553 46.9571 58.1353 48.0465 58.4773C49.1358 58.8066 50.2758 58.9713 51.4665 58.9713C52.8598 58.9713 53.9745 58.6546 54.8105 58.0213C55.6465 57.3753 56.0645 56.3873 56.0645 55.0573C56.0645 53.7273 55.6528 52.7266 54.8295 52.0553C54.0188 51.3713 52.7965 51.0293 51.1625 51.0293H48.4645V46.4693H51.1245C52.4925 46.4693 53.5375 46.1526 54.2595 45.5193C54.9815 44.886 55.3425 44.012 55.3425 42.8973C55.3425 41.922 55.0068 41.143 54.3355 40.5603C53.6768 39.965 52.7205 39.6673 51.4665 39.6673C50.3898 39.6673 49.3701 39.832 48.4075 40.1613C47.4575 40.4906 46.5138 40.9213 45.5765 41.4533L44.8545 37.1593C45.7285 36.7033 46.7671 36.3106 47.9705 35.9813C49.1865 35.652 50.5165 35.4873 51.9605 35.4873C53.6958 35.4873 55.1588 35.785 56.3495 36.3803C57.5401 36.963 58.4395 37.7673 59.0475 38.7933C59.6681 39.8193 59.9785 40.9846 59.9785 42.2893C59.9785 43.9993 59.5225 45.4496 58.6105 46.6403C57.6985 47.831 56.4065 48.6353 54.7345 49.0533L54.6965 48.1793C56.5458 48.4833 58.0468 49.2243 59.1995 50.4023C60.3521 51.5803 60.9285 53.132 60.9285 55.0573C60.9285 56.7926 60.5295 58.262 59.7315 59.4653C58.9461 60.6686 57.8441 61.587 56.4255 62.2203C55.0068 62.841 53.3538 63.1513 51.4665 63.1513Z" fill="white"/>
+                                    <path d="M64.9208 62.6193V57.4513H69.8608V62.6193H64.9208Z" fill="white"/>
+                                    </g>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_186_24" x="0" y="0" width="110" height="110" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect1_dropShadow_186_24"/>
+                                    <feOffset dy="4"/>
+                                    <feGaussianBlur stdDeviation="12"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.309804 0 0 0 0 0.886275 0 0 0 0.2 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_186_24"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_186_24" result="shape"/>
+                                    </filter>
+                                    <linearGradient id="paint0_linear_186_24" x1="34.8095" y1="27.7619" x2="87" y2="76.1429" gradientUnits="userSpaceOnUse">
+                                    <stop stopColor="#B6B8BF"/>
+                                    <stop offset="1" stopColor="#628D92"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                            </span>
                             <h6>Lead generation Services for SME’s</h6>
                             <p>What makes us different?</p>
                             <p>We believe that a Talent partner can and should do more than just deliver on hiring programmes. In our experience with the activity that gets conducted we are very well placed to monitor and actively seek new leads for SME’s who are looking to build market presence, channel partner programmes and general sales activity. We just want to be on the ball for our client portfolio.</p>
