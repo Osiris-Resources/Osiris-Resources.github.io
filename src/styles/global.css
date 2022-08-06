@@ -1829,6 +1829,32 @@ nav {
     }
   }
 
+  /* Register */
+  .register-container {
+    margin-top: 180px;
+  }
+
+  @media screen and (max-width: 1199.20px) {
+    .register-container {
+      margin-top: 120px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .register-container {
+      margin-bottom: 60px;
+    }
+    .register-container iframe {
+      height: 950px;
+    }
+  }
+
+  @media screen and (max-width: 348px) {
+    .register-container iframe {
+      height: 1000px;
+    }
+  }
+
   /* Footer */
   footer {
     background: #000000;

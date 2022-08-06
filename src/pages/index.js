@@ -1,6 +1,7 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import { useState, useEffect } from 'react'
+import { Link } from 'gatsby'
 import { Waypoint } from 'react-waypoint'
 import { StaticImage } from 'gatsby-plugin-image'
 import ServicesSwiper from "../components/services-swiper"
@@ -35,7 +36,7 @@ const numberAnimation = (isActiveSection, numberId) => {
 }
 
 const useWndowWidth = () => {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+    const [windowWidth, setWindowWidth] = useState('undefined')
     useEffect(() => {
         const handleResize = () => {
             setWindowWidth(window.innerWidth)
@@ -251,7 +252,7 @@ const IndexPage = () => {
                                     <h3>Osiris Resources is an <span>expert consultancy delivering global hiring programs</span> for clients in the <span>Telecommunication</span> and <span>Computer Networking</span> space.</h3>
                                     <div className="hero-cta">
                                         <a className="btn" href="javascript:void(0)" onClick={(e) => scrollTo(e, "about")}>Find Out More</a>
-                                        <a className="btn hero-btn-last" href="#">Register Interest</a>
+                                        <Link className="btn hero-btn-last" to="/register">Register Interest</Link>
                                     </div>
                                 </div>
                             </div>
