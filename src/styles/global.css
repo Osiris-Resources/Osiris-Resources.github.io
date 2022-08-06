@@ -1079,13 +1079,13 @@ nav {
 
   @media screen and (max-width: 1199.20px) {
     .about-profiles .line-horizontal-last {
-      bottom: 67%;
+      bottom: 72%;
     }
   }
 
   @media screen and (max-width: 991.20px) {
     .about-profiles .line-horizontal-last {
-      bottom: 36%;
+      bottom: 44%;
     }
   }
 
@@ -1117,7 +1117,7 @@ nav {
   @media screen and (max-width: 991.20px) {
     .about-profiles .line-vertical-last {
       left: 40.5%;
-      bottom: 27%;
+      bottom: 33%;
     }
   }
 

@@ -53,7 +53,7 @@ const useWndowWidth = () => {
 
 
 const IndexPage = () => {
-  const [isHero, setIsHero] = useState(true)
+  const [isHero, setIsHero] = useState(false)
   return (
     <Layout isArticle={false} isHero={isHero} scrollTo={scrollTo}>
         <Waypoint onEnter={() => setIsHero(true)} onLeave={() => setIsHero(false)}>
