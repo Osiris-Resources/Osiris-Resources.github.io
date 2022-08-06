@@ -193,6 +193,12 @@ nav {
   .navbar {
     padding: 12px 1rem;
   }
+
+  @media screen and (max-width :1199.20px) {
+    .navbar {
+      border-top: 0;
+    }
+  }
   
   .navbar-brand img {
     width: 130px;

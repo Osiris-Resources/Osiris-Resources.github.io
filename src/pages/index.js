@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Waypoint } from 'react-waypoint'
 import { StaticImage } from 'gatsby-plugin-image'
 import ServicesSwiper from "../components/services-swiper"
@@ -33,6 +33,24 @@ const numberAnimation = (isActiveSection, numberId) => {
     const numberEl = document.getElementById(`${numberId}`)
     isActiveSection ? numberEl.classList.add("animate-number") : numberEl.classList.remove("animate-number")
 }
+
+const useWndowWidth = () => {
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth)
+        }
+
+        window.addEventListener("resize", handleResize)
+
+        handleResize()
+
+        return () => window.removeEventListener("resize", handleResize)
+    }, [])
+
+    return (windowWidth !== typeof 'undefined' ? windowWidth : 0)
+}
+
 
 const IndexPage = () => {
   const [isHero, setIsHero] = useState(true)
@@ -290,7 +308,7 @@ const IndexPage = () => {
             </Waypoint>
             <div className="about-profiles">
                 <div className="container">
-                    <Waypoint onEnter={() => lineAnimation(true, "lineHorizontal", "lineVertical", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation(false, "lineHorizontal", "lineVertical", "line-animation-l", "line-animation-r")}>
+                    <Waypoint onEnter={() => lineAnimation(true, "lineHorizontal", "lineVertical", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation(false, "lineHorizontal", "lineVertical", "line-animation-l", "line-animation-r")} bottomOffset={useWndowWidth() > 767.20 ? 80 : 0}>
                         <div className="row mb-5">
                             <div className="col-md-4">
                                 <div className="profile-first">
@@ -309,7 +327,7 @@ const IndexPage = () => {
                             </div>
                         </div>
                     </Waypoint>
-                    <Waypoint onEnter={() => lineAnimation(true, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation(false, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")}>
+                    <Waypoint onEnter={() => lineAnimation(true, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation(false, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
                         <div className="row mt-5 mb-5">
                             <div className="col-md-4 order-md-2">
                                 <div className="profile-middle">
@@ -328,7 +346,7 @@ const IndexPage = () => {
                             </div>
                         </div>
                     </Waypoint>
-                    <Waypoint onEnter={() => lineAnimation(true, "lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} onLeave={() => lineAnimation(false, "lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")}>
+                    <Waypoint onEnter={() => lineAnimation(true, "lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} onLeave={() => lineAnimation(false, "lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
                         <div className="row mt-5">
                             <div className="col-md-4">
                                 <div className="profile-last">
