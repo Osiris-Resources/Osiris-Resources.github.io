@@ -48,12 +48,12 @@ const Nav = ({simpleNav, isHero, scrollTo}) => {
                         <li className="nav-item nav-only">
                             <a className="nav-link" href="tel:+441179410523"><FontAwesomeIcon icon={faEarthEurope} /> +44 (0) 117 941 0523</a>
                         </li>
-                        <li className="nav-item nav-only">
+                        {/* <li className="nav-item nav-only">
                             <a className="nav-link" href="tel:+441179410523"><FontAwesomeIcon icon={faEarthEurope} /> +44 (0) 117 941 0523</a>
                         </li>
                         <li className="nav-item nav-only">
                             <a className="nav-link" href="tel:+441179410523"><FontAwesomeIcon icon={faEarthAmericas} /> +44 (0) 117 941 0523</a>
-                        </li>
+                        </li> */}
                         <li className="nav-item nav-only">
                             <div className="nav-social">
                                 <a href="/">
@@ -97,12 +97,12 @@ const Nav = ({simpleNav, isHero, scrollTo}) => {
                         <li className="nav-item">
                             <a className="nav-link" href="tel:+441179410523"><FontAwesomeIcon icon={faEarthEurope} /> +44 (0) 117 941 0523</a>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <a className="nav-link" href="tel:+441179410523"><FontAwesomeIcon icon={faEarthEurope} /> +44 (0) 117 941 0523</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="tel:+441179410523"><FontAwesomeIcon icon={faEarthAmericas} /> +44 (0) 117 941 0523</a>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>  
             </nav>

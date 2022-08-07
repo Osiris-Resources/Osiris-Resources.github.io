@@ -7,7 +7,7 @@ module.exports = {
     description:
       `Osiris Resources is an expert consultancy delivering global hiring programs for clients in the Telecommunication and Computer Networking space.`,
     image: `/osiris-resources-og-image.jpg`,
-    keywords: ``,
+    keywords: `Expert Consultancy,Consultancy,Recruitment,Hiring,Telco,Telecommunications,Networking,Osiris Resources`,
     maskedIcon: `/safari-pinned-tab.svg`,
     socials: [
       {

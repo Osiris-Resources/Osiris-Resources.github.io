@@ -40,7 +40,7 @@ const ContactSection = ({highlightAnimation}) => {
                             <a className="btn btn-content" href="mailto:info@osirisresources.com">Send Us A Message</a>
                         </div>
                     </div>
-                    <div className="row">
+                    {/* <div className="row">
                         <div className="col-12 text-center">
                             <hr className="divider-long"></hr>
                         </div>
@@ -70,7 +70,7 @@ const ContactSection = ({highlightAnimation}) => {
                                 <h6>United States</h6>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </Waypoint>
         </div>
