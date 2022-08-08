@@ -1,7 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import { useState, useEffect } from 'react'
-import { Link } from 'gatsby'
 import { Waypoint } from 'react-waypoint'
 import { StaticImage } from 'gatsby-plugin-image'
 import ServicesSwiper from "../components/services-swiper"
@@ -252,7 +251,7 @@ const IndexPage = () => {
                                     <h3>Osiris Resources is an <span>expert consultancy delivering global hiring programs</span> for clients in the <span>Telecommunication</span> and <span>Computer Networking</span> space.</h3>
                                     <div className="hero-cta">
                                         <a className="btn" href="javascript:void(0)" onClick={(e) => scrollTo(e, "about")}>Find Out More</a>
-                                        <Link className="btn hero-btn-last" to="/register">Register Interest</Link>
+                                        <a className="btn hero-btn-last" href="https://docs.google.com/forms/d/e/1FAIpQLSdkPeYj4JstQt2cAG3fwn9ImuaBSOgSBcAF0Tf64w8Nrmk7LQ/viewform?usp=sf_link" target="_blank" rel="noreferrer">Register Interest</a>
                                     </div>
                                 </div>
                             </div>
@@ -313,7 +312,7 @@ const IndexPage = () => {
                         <div className="row mb-5">
                             <div className="col-md-4">
                                 <div className="profile-first">
-                                    <StaticImage src="../images/James_Hill_img.png" />
+                                    <StaticImage src="../images/James_Hill_img.png" alt="James Hill - Osiris Resources" />
                                     <span id="lineHorizontal" className="accent-line line-horizontal"></span>
                                     <span id="lineVertical" className="accent-line line-vertical"></span>
                                 </div>
@@ -332,7 +331,7 @@ const IndexPage = () => {
                         <div className="row mt-5 mb-5">
                             <div className="col-md-4 order-md-2">
                                 <div className="profile-middle">
-                                    <StaticImage src="../images/Callum_Randall_img.png" />
+                                    <StaticImage src="../images/Callum_Randall_img.png" alt="Callum Randall - Osiris Resources" />
                                     <span id="lineLeft" className="accent-line line-left"></span>
                                     <span id="lineRight" className="accent-line line-right"></span>
                                 </div>
@@ -351,7 +350,7 @@ const IndexPage = () => {
                         <div className="row mt-5">
                             <div className="col-md-4">
                                 <div className="profile-last">
-                                    <StaticImage src="../images/Nick_Randall_img.png" />
+                                    <StaticImage src="../images/Nick_Randall_img.png" alt="Nick Randall - Osiris Resources" />
                                     <span id="lineHorizontalLast" className="accent-line line-horizontal-last"></span>
                                     <span id="lineVerticalLast" className="accent-line line-vertical-last"></span>
                                 </div>
