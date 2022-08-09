@@ -26,13 +26,13 @@ const ContactSection = ({highlightAnimation}) => {
                             <a href="mailto:info@osirisresources.com"><h5>info[@]osirisresources.com</h5></a>
                         </div>
                         <div className="col-lg-4 text-center social-footer">
-                            <a href="/">
+                            {/* <a href="/">
                                 <FontAwesomeIcon icon={faFacebookSquare} />
-                            </a>
-                            <a href="/">
+                            </a> */}
+                            <a href="https://www.linkedin.com/company/osiris-resources-consultancy/" target="_blank" rel="noreferrer">
                                 <FontAwesomeIcon icon={faLinkedin} />
                             </a>
-                            <a href="/">
+                            <a href="https://twitter.com/osirisresource" target="_blank" rel="noreferrer">
                                 <FontAwesomeIcon icon={faTwitterSquare} />
                             </a>
                         </div>

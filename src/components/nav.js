@@ -56,13 +56,13 @@ const Nav = ({simpleNav, isHero, scrollTo}) => {
                         </li> */}
                         <li className="nav-item nav-only">
                             <div className="nav-social">
-                                <a href="/">
+                                {/* <a href="/">
                                     <FontAwesomeIcon icon={faFacebookSquare} />
-                                </a>
-                                <a href="/">
+                                </a> */}
+                                <a href="https://www.linkedin.com/company/osiris-resources-consultancy/" target="_blank" rel="noreferrer">
                                     <FontAwesomeIcon icon={faLinkedin} />
                                 </a>
-                                <a href="/">
+                                <a href="https://twitter.com/osirisresource" target="_blank" rel="noreferrer">
                                     <FontAwesomeIcon icon={faTwitterSquare} />
                                 </a>
                             </div>
@@ -81,13 +81,13 @@ const Nav = ({simpleNav, isHero, scrollTo}) => {
             <nav className={`navbar fixed-top navbar-expand-xl navbar-dark ${isHero ? "top-menu-scrolling-hero" : "top-menu-scrolling-content"}`}>
                 <div className="me-auto tog-container">
                     <div className="nav-social">
-                        <a href="/">
+                        {/* <a href="/">
                             <FontAwesomeIcon icon={faFacebookSquare} />
-                        </a>
-                        <a href="/">
+                        </a> */}
+                        <a href="https://www.linkedin.com/company/osiris-resources-consultancy/" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
-                        <a href="/">
+                        <a href="https://twitter.com/osirisresource" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faTwitterSquare} />
                         </a>
                     </div>
