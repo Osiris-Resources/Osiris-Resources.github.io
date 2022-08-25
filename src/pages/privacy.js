@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 const Privacy = () => {
     return (
-        <Layout isArticle={false} isHero={false} simpleNav={true}>
+        <Layout title="Privacy Policy" isArticle={false} isHero={false} simpleNav={true}>
             <div className="container mt-5 mb-5 privacy-container">
                 <div className="row mt-5 mb-5">
                     <div className="col-12 mt-5 mb-5">
