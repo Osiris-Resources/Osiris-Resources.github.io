@@ -1889,6 +1889,45 @@ nav {
     }
   }
 
+  /* privacy */
+  .privacy-container {
+    color: #000000;
+  }
+
+  @media screen and (max-width: 600px) {
+    .privacy-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .privacy-container h1 {
+    font-weight: 700;
+    font-size: 38px;
+  }
+
+  .privacy-container h2 {
+    font-weight: 600;
+  }
+
+  .privacy-container p, .privacy-container ul li {
+    font-size: 20px;
+  }
+
+  .privacy-container .bold-text {
+    font-weight: 600;
+  }
+
+  .privacy-container a {
+    color: #525252;
+    transition-timing-function: ease-in;
+    transition: 1s;
+  }
+
+  .privacy-container a:hover {
+    color: #000000;
+  }
+
   /* Footer */
   footer {
     background: #000000;
