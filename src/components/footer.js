@@ -10,7 +10,10 @@ const Footer = () => {
     return(
         <footer>
             <p>Copyright © {getYear()} Osiris Resources. All Rights Reserved.</p>
-            <Link to="/privacy">Privacy Policy</Link>
+            <div className='footer-links'>
+                <Link to="/privacy">Privacy Policy</Link>
+                <Link to="/cookies">Cookie Policy</Link>
+            </div>
         </footer>
     )
 }

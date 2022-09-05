@@ -1889,42 +1889,42 @@ nav {
     }
   }
 
-  /* privacy */
-  .privacy-container {
+  /* privacy & Cookies */
+  .privacy-container, .cookies-container {
     color: #000000;
   }
 
   @media screen and (max-width: 600px) {
-    .privacy-container {
+    .privacy-container, .cookies-container {
       padding-left: 20px;
       padding-right: 20px;
     }
   }
 
-  .privacy-container h1 {
+  .privacy-container h1, .cookies-container h1 {
     font-weight: 700;
     font-size: 38px;
   }
 
-  .privacy-container h2 {
+  .privacy-container h2, .cookies-container h2 {
     font-weight: 600;
   }
 
-  .privacy-container p, .privacy-container ul li {
+  .privacy-container p, .privacy-container ul li, .cookies-container p, .cookies-container ul li {
     font-size: 20px;
   }
 
-  .privacy-container .bold-text {
+  .privacy-container .bold-text, .cookies-container .bold-text {
     font-weight: 600;
   }
 
-  .privacy-container a {
+  .privacy-container a, .cookies-container a {
     color: #525252;
     transition-timing-function: ease-in;
     transition: 1s;
   }
 
-  .privacy-container a:hover {
+  .privacy-container a:hover, .cookies-container a:hover {
     color: #000000;
   }
 
@@ -1980,15 +1980,36 @@ nav {
     margin-top: 5px;
   }
 
+  footer .footer-links {
+    margin-top: 5px;
+  }
+
   footer a {
     color: #FFFFFF;
     font-family: 'Cabin', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    margin-top: 5px;
+    margin-top: 8px;
     text-decoration: none;
     transition-timing-function: ease-in;
     transition: 1s;
+  }
+
+  @media screen and (max-width: 300px) {
+    footer a {
+      display: block;
+      margin-top: 3px;
+    }
+  }
+
+  footer a:first-child {
+    margin-right: 20px;
+  }
+
+  @media screen and (max-width: 300px) {
+    footer a:first-child {
+      margin-right: 0;
+    }
   }
 
   footer a:hover {
