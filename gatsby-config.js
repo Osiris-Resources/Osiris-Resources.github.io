@@ -60,5 +60,17 @@ module.exports = {
               }
             },
             "gatsby-plugin-fontawesome-css",
+            {
+              resolve: `gatsby-plugin-gdpr-cookies`,
+              options: {
+                googleAnalytics: {
+                  trackingId: 'G-K9GYB1P67K',
+                  cookieName: 'gatsby-gdpr-google-analytics',
+                  anonymize: true,
+                  allowAdFeatures: false
+                },
+                environments: ['production']
+              },
+            },
         ]
 };

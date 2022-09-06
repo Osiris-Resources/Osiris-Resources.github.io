@@ -2,7 +2,7 @@ import * as React from 'react'
 import Nav from './nav'
 import Footer from './footer'
 import SEO from './seo'
-// import CookieBanner from './cookies'
+import CookieBanner from './cookie'
 
 const Layout = ({ title, description, keywords, image, simpleNav, isHero, scrollTo, children }) => {
   return (
@@ -13,7 +13,7 @@ const Layout = ({ title, description, keywords, image, simpleNav, isHero, scroll
         {children}
         <Footer />
       </main>
-      {/* <CookieBanner /> */}
+      <CookieBanner />
     </>
   )
 }

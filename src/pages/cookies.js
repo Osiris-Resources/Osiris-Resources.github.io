@@ -10,11 +10,11 @@ const Cookies = () => {
                         <h1 className="text-center mt-5">Cookies Policy</h1>
                         <br/>
                         <p>Osiris Resources uses small files which help the site to function and help to collect information about how you browse and navigate the site. These files are saved to your device and are known as (‘cookies’). <a href="AllAboutCookies.org" target="_blank" rel="noreferrer">AllAboutCookies.org</a> is a great place to learn more about what exactly cookies are.</p>
-                        <h2 className="mt-5 mb-3">Osiris Resources uses cookies:</h2>
+                        <p><span className="bold-text">Osiris Resources uses cookies:</span></p>
                         <p>To store website session information.</p>
                         <p>To obtain analytical information about how you use the site through the third party Google Analytics, allowing for changes and improvements to be made based upon browsing activity.</p>
                         <p>To remember your preference in response to a cookie notice that is displayed to you.</p>
-                        <h2 className="mt-5 mb-3">The cookies used in conjunction with Google Analytics allow for the following information to be collected:</h2>
+                        <p><span className="bold-text">The cookies used in conjunction with Google Analytics allow for the following information to be collected:</span></p>
                         <ul>
                             <li>How you got to the site, for example from a Google search or from a link on another site.</li>
                             <li>What type of browser and device you are using to view the site.</li>
@@ -27,17 +27,18 @@ const Cookies = () => {
                         <h2 className="mt-5 mb-3">Essential Cookies</h2>
                         <h3 className="mt-5 mb-3">Session Storage Cookie</h3>
                         <p>This cookie stores things such as your scroll position on a page.</p>
-                        <p>osirisresources.com Expires When Session Ends</p>
-                        <p>gatsby-gdpr-google-analytics Expires 90 Days</p>
+                        <p><span className="bold-text">osirisresources.com</span> – Expires When Session Ends</p>
                         <h3 className="mt-5 mb-3">Cookie Consent</h3>
                         <p>This cookie is used to remember your preference for non-essential cookies.</p>
-                        <p>gatsby-gdpr-google-analytics Expires 90 Days</p>
+                        <p><span className="bold-text">gatsby-gdpr-google-analytics</span> – Expires 90 Days</p>
                         <h2 className="mt-5 mb-3">Non-Essential Cookies</h2>
                         <h3 className="mt-5 mb-3">Google Analytics Cookies</h3>
                         <p>These cookies are used to record which pages and content on the site you use, and enables Osiris Resources to monitor statistics and data to make sure users are getting the most out of the site.</p>
-                        <p>Name _ga – Expires 2 Years</p>
-                        <p>Name _gat – Expires 10 Minutes</p>
-                        <p>Name _gid – Expires 1 Day</p>
+                        <p><span className="bold-text">_ga</span> – Expires 2 Years</p>
+                        <p><span className="bold-text">_gat</span> – Expires 10 Minutes</p>
+                        <p><span className="bold-text">_gid</span> – Expires 1 Day</p>
+                        <br/>
+                        <p>If you navigate to a different site away from osirisresources.com, that new site will use its own cookies that may differ to those associated with Osiris Resources.</p>
                     </div>
                 </div>
             </div>
