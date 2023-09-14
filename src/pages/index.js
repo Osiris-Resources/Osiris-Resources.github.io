@@ -327,28 +327,28 @@ const IndexPage = () => {
                             </div>
                         </div>
                     </Waypoint>
-                    <Waypoint onEnter={() => lineAnimation(true, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation(false, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
+                    {/* <Waypoint onEnter={() => lineAnimation(true, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation(false, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
                         <div className="row mt-5 mb-5">
                             <div className="col-md-4 order-md-2">
                                 <div className="profile-middle">
-                                    <StaticImage src="../images/Callum_Randall_img.png" alt="Callum Randall - Osiris Resources" />
+                                    <StaticImage src="" alt="" />
                                     <span id="lineLeft" className="accent-line line-left"></span>
                                     <span id="lineRight" className="accent-line line-right"></span>
                                 </div>
                             </div>
                             <div className="col-md-8 order-md-1 profile-text">
                                 <div className="profile-text-container me-5">
-                                    <h5>Callum Randall</h5>
-                                    <h6 className="mb-5">Telco / Networking Consultant</h6>
-                                    <p>Callum has made a huge impact on the development of Osiris Resources after only half a year in industry thus far. Previously he was a Royal Marine recruit where skills such as tenacity, resilience and hard work were learnt in a unique environment.</p>
-                                    <p>Quickly learning and developing himself in the world of Telco he is responsible for sourcing and delivery across our client portfolio. In his spare time Callum likes to train in mixed martial arts and boxing as well as attending music festivals.</p>
+                                    <h5></h5>
+                                    <h6 className="mb-5"></h6>
+                                    <p></p>
+                                    <p></p>
                                 </div>
                             </div>
                         </div>
-                    </Waypoint>
+                    </Waypoint> */}
                     <Waypoint onEnter={() => lineAnimation(true, "lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} onLeave={() => lineAnimation(false, "lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
                         <div className="row mt-5">
-                            <div className="col-md-4">
+                            <div className="col-md-4 order-md-2">
                                 <div className="profile-last">
                                     <StaticImage src="../images/Nick_Randall_img.png" alt="Nick Randall - Osiris Resources" />
                                     <span id="lineHorizontalLast" className="accent-line line-horizontal-last"></span>
