@@ -327,28 +327,28 @@ const IndexPage = () => {
                             </div>
                         </div>
                     </Waypoint>
-                    {/* <Waypoint onEnter={() => lineAnimation(true, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation(false, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
+                    <Waypoint onEnter={() => lineAnimation(true, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation(false, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
                         <div className="row mt-5 mb-5">
                             <div className="col-md-4 order-md-2">
                                 <div className="profile-middle">
-                                    <StaticImage src="" alt="" />
+                                    <StaticImage src="../images/Denisa_Saiu_img.png" alt="Denisa Saiu - Osiris Resources" />
                                     <span id="lineLeft" className="accent-line line-left"></span>
                                     <span id="lineRight" className="accent-line line-right"></span>
                                 </div>
                             </div>
                             <div className="col-md-8 order-md-1 profile-text">
                                 <div className="profile-text-container me-5">
-                                    <h5></h5>
-                                    <h6 className="mb-5"></h6>
-                                    <p></p>
-                                    <p></p>
+                                    <h5>Denisa Saiu</h5>
+                                    <h6 className="mb-5">Resource Consultant EMEA</h6>
+                                    <p>Denisa joined Osiris Resources to help grow and cover emerging talent markets in EMEA as a Resource Consultant.</p>
+                                    <p>She has a particular focus on talent markets in Eastern Europe and will be using her growing expertise to deliver on hiring plans in this area.</p>
                                 </div>
                             </div>
                         </div>
-                    </Waypoint> */}
+                    </Waypoint>
                     <Waypoint onEnter={() => lineAnimation(true, "lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} onLeave={() => lineAnimation(false, "lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
                         <div className="row mt-5">
-                            <div className="col-md-4 order-md-2">
+                            <div className="col-md-4">
                                 <div className="profile-last">
                                     <StaticImage src="../images/Nick_Randall_img.png" alt="Nick Randall - Osiris Resources" />
                                     <span id="lineHorizontalLast" className="accent-line line-horizontal-last"></span>
