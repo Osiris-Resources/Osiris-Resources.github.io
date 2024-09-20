@@ -331,17 +331,17 @@ const IndexPage = () => {
                         <div className="row mt-5 mb-5">
                             <div className="col-md-4 order-md-2">
                                 <div className="profile-middle">
-                                    <StaticImage src="../images/Denisa_Saiu_img.png" alt="Denisa Saiu - Osiris Resources" />
+                                    <StaticImage src="../images/Molly_Tam_img.png" alt="Molly Tam - Osiris Resources" />
                                     <span id="lineLeft" className="accent-line line-left"></span>
                                     <span id="lineRight" className="accent-line line-right"></span>
                                 </div>
                             </div>
                             <div className="col-md-8 order-md-1 profile-text">
                                 <div className="profile-text-container me-5">
-                                    <h5>Denisa Saiu</h5>
-                                    <h6 className="mb-5">Resource Consultant EMEA</h6>
-                                    <p>Denisa joined Osiris Resources to help grow and cover emerging talent markets in EMEA as a Resource Consultant.</p>
-                                    <p>She has a particular focus on talent markets in Eastern Europe and will be using her growing expertise to deliver on hiring plans in this area.</p>
+                                    <h5>Molly Tam</h5>
+                                    <h6 className="mb-5">Digital and Marketing Manager</h6>
+                                    <p>Molly is a seasoned marketer with over eight years of experience in branding and marketing for global brands. She excels in brand strategy and awareness, social media content creation, franchise event management, and stakeholder relationship building.</p>
+                                    <p>Her expertise in digital marketing and strategic communications enhances our approach to championing the Telco and Networking ecosystem.</p>
                                 </div>
                             </div>
                         </div>
