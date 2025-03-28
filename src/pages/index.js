@@ -327,35 +327,35 @@ const IndexPage = () => {
                             </div>
                         </div>
                     </Waypoint>
-                    <Waypoint onEnter={() => lineAnimation(true, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation(false, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
+                    {/* <Waypoint onEnter={() => lineAnimation(true, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation(false, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
                         <div className="row mt-5 mb-5">
                             <div className="col-md-4 order-md-2">
                                 <div className="profile-middle">
-                                    <StaticImage src="../images/Molly_Tam_img.png" alt="Molly Tam - Osiris Resources" />
+                                    <StaticImage src="../images/_img.png" alt="- Osiris Resources" />
                                     <span id="lineLeft" className="accent-line line-left"></span>
                                     <span id="lineRight" className="accent-line line-right"></span>
                                 </div>
                             </div>
                             <div className="col-md-8 order-md-1 profile-text">
                                 <div className="profile-text-container me-5">
-                                    <h5>Molly Tam</h5>
-                                    <h6 className="mb-5">Digital and Marketing Manager</h6>
-                                    <p>Molly is a seasoned marketer with over eight years of experience in branding and marketing for global brands. She excels in brand strategy and awareness, social media content creation, franchise event management, and stakeholder relationship building.</p>
-                                    <p>Her expertise in digital marketing and strategic communications enhances our approach to championing the Telco and Networking ecosystem.</p>
+                                    <h5></h5>
+                                    <h6 className="mb-5"></h6>
+                                    <p></p>
+                                    <p></p>
                                 </div>
                             </div>
                         </div>
-                    </Waypoint>
+                    </Waypoint> */}
                     <Waypoint onEnter={() => lineAnimation(true, "lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} onLeave={() => lineAnimation(false, "lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
                         <div className="row mt-5">
-                            <div className="col-md-4">
+                            <div className="col-md-4 order-md-2">
                                 <div className="profile-last">
                                     <StaticImage src="../images/Nick_Randall_img.png" alt="Nick Randall - Osiris Resources" />
                                     <span id="lineHorizontalLast" className="accent-line line-horizontal-last"></span>
                                     <span id="lineVerticalLast" className="accent-line line-vertical-last"></span>
                                 </div>
                             </div>
-                            <div className="col-md-8 profile-text">
+                            <div className="col-md-8 order-md-1 profile-text">
                                 <div className="profile-text-container ms-5">
                                     <h5>Nick Randall</h5>
                                     <h6 className="mb-5">Non Exec Director</h6>
