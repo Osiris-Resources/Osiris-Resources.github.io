@@ -54,7 +54,7 @@ module.exports = {
               options: {
                 fonts: [
                   `cabin\:400,600,700`,
-                  `dosis\:400,600`
+                  `sora\:400,600`
                 ],
                 display: 'swap'
               }
