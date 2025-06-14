@@ -40,6 +40,9 @@ const Nav = ({simpleNav, isHero, scrollTo}) => {
                             <a className="nav-link" href="javascript:void(0)" onClick={(e) => scrollTo(e, "services")}>Services</a>
                         </li>
                         <li className="nav-item">
+                            <a className="nav-link" href="javascript:void(0)" onClick={(e) => scrollTo(e, "team")}>Team</a>
+                        </li>
+                        <li className="nav-item">
                             <a className="nav-link" href="javascript:void(0)" onClick={(e) => scrollTo(e, "globalFootprint")}>Global Footprint</a>
                         </li>
                         <li className="nav-item">

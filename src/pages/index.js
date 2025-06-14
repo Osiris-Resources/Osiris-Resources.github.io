@@ -2,7 +2,8 @@ import * as React from "react"
 import Layout from "../components/layout"
 import { useState, useEffect } from 'react'
 import { Waypoint } from 'react-waypoint'
-import { StaticImage } from 'gatsby-plugin-image'
+import SectorsSection from "../components/sectors"
+import TeamSection from "../components/team"
 import FootprintSection from "../components/footprint"
 import CtaSection from "../components/cta"
 import ContactSection from "../components/contact"
@@ -21,26 +22,26 @@ import CaseStudy from "../images/casestudy"
 import Hiring from "../images/hiring"
 
 const scrollTo = (e, sectionName) => {
-    const section = document.getElementById(`${sectionName}`)
+    const section = document.getElementById(sectionName)
     e.preventDefault()
     section && section.scrollIntoView({ behavior: "smooth", block: "start" })
 }
 
 const highlightAnimation = (isActiveSection, highlightId) => {
-    const highlight = document.getElementById(`${highlightId}`)
-    isActiveSection ? highlight.classList.add("animate-highlight") : highlight.classList.remove("animate-highlight")
+    const highlight = document.getElementById(highlightId)
+    highlight.classList.toggle("animate-highlight")
 }
 
 const lineAnimation = (isActiveProfile, lineOneId, lineTwoId, animationTypeOne, animationTypeTwo) => {
-    const lineOne = document.getElementById(`${lineOneId}`)
-    const lineTwo = document.getElementById(`${lineTwoId}`)
-    isActiveProfile ? lineOne.classList.add(`${animationTypeOne}`) : lineOne.classList.remove(`${animationTypeOne}`)
-    isActiveProfile ? lineTwo.classList.add(`${animationTypeTwo}`) : lineTwo.classList.remove(`${animationTypeTwo}`)
+    const lineOne = document.getElementById(lineOneId)
+    const lineTwo = document.getElementById(lineTwoId)
+    lineOne.classList.toggle(animationTypeOne)
+    lineTwo.classList.toggle(animationTypeTwo)
 }
 
 const numberAnimation = (isActiveSection, numberId) => {
-    const numberEl = document.getElementById(`${numberId}`)
-    isActiveSection ? numberEl.classList.add("animate-number") : numberEl.classList.remove("animate-number")
+    const numberEl = document.getElementById(numberId)
+    numberEl.classList.toggle("animate-number")
 }
 
 const useWndowWidth = () => {
@@ -80,7 +81,7 @@ const IndexPage = () => {
                             <div className="col-lg-6 order-lg-1">
                                 <div className="hero-content">
                                     <h1>Data Driven Recruitment</h1>
-                                    <h3>Osiris Resources is an <span>expert consultancy delivering global hiring programs</span> that covers projects in three cutting edge technology areas. <span>Artifical Intelligence (AI)</span>, <span>Telecommunication</span> and <span>Quantum Computing</span>.</h3>
+                                    <h3>Osiris Resources is an <span>expert consultancy delivering global hiring programs</span> which cover projects in three cutting edge technology areas. <span>Artifical Intelligence (AI)</span>, <span>Telecommunication</span> and <span>Quantum Computing</span>.</h3>
                                     <div className="hero-cta">
                                         <a className="btn" href="javascript:void(0)" onClick={(e) => scrollTo(e, "about")}>Find Out More</a>
                                         <a className="btn hero-btn-last" href="https://docs.google.com/forms/d/e/1FAIpQLSdkPeYj4JstQt2cAG3fwn9ImuaBSOgSBcAF0Tf64w8Nrmk7LQ/viewform?usp=sf_link" target="_blank" rel="noreferrer">Register Interest</a>
@@ -141,67 +142,7 @@ const IndexPage = () => {
                     </div>
                 </div>
             </Waypoint>
-            <div className="about-profiles">
-                <div className="container">
-                    <Waypoint onEnter={() => lineAnimation(true, "lineHorizontal", "lineVertical", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation(false, "lineHorizontal", "lineVertical", "line-animation-l", "line-animation-r")} bottomOffset={useWndowWidth() > 767.20 ? 80 : 0}>
-                        <div className="row mb-5">
-                            <div className="col-md-4">
-                                <div className="profile-first">
-                                    <StaticImage src="../images/James_Hill_img.png" alt="James Hill - Osiris Resources" />
-                                    <span id="lineHorizontal" className="accent-line line-horizontal"></span>
-                                    <span id="lineVertical" className="accent-line line-vertical"></span>
-                                </div>
-                            </div>
-                            <div className="col-md-8 profile-text">
-                                <div className="profile-text-container ms-5">
-                                    <h5>James Hill</h5>
-                                    <h6 className="mb-5">Director</h6>
-                                    <p>Osiris Resources was started by James who recognised the need for an expert consultancy in a growingly saturated and niche market. James has worked directly for SME’s and large corporations delivering talent solutions for the Telco market and also has experience delivering business operations and running enterprise sales programmes.</p>
-                                    <p>He is passionate about maintaining and building further an already existing ecosystem in the Telecoms and Computer Networking industry.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </Waypoint>
-                    {/* <Waypoint onEnter={() => lineAnimation(true, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation(false, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
-                        <div className="row mt-5 mb-5">
-                            <div className="col-md-4 order-md-2">
-                                <div className="profile-middle">
-                                    <StaticImage src="../images/_img.png" alt="- Osiris Resources" />
-                                    <span id="lineLeft" className="accent-line line-left"></span>
-                                    <span id="lineRight" className="accent-line line-right"></span>
-                                </div>
-                            </div>
-                            <div className="col-md-8 order-md-1 profile-text">
-                                <div className="profile-text-container me-5">
-                                    <h5></h5>
-                                    <h6 className="mb-5"></h6>
-                                    <p></p>
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                    </Waypoint> */}
-                    <Waypoint onEnter={() => lineAnimation(true, "lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} onLeave={() => lineAnimation(false, "lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
-                        <div className="row mt-5">
-                            <div className="col-md-4 order-md-2">
-                                <div className="profile-last">
-                                    <StaticImage src="../images/Nick_Randall_img.png" alt="Nick Randall - Osiris Resources" />
-                                    <span id="lineHorizontalLast" className="accent-line line-horizontal-last"></span>
-                                    <span id="lineVerticalLast" className="accent-line line-vertical-last"></span>
-                                </div>
-                            </div>
-                            <div className="col-md-8 order-md-1 profile-text">
-                                <div className="profile-text-container ms-5">
-                                    <h5>Nick Randall</h5>
-                                    <h6 className="mb-5">Non Exec Director</h6>
-                                    <p>Nick advises Osiris Resources, helping us with mentoring, coaching and general business management. He is CEO of NetMinded, a Bristol-based Networking start-up. Osiris Resources enjoys working with innovative companies such as NetMinded.</p>
-                                    <p>Our passion is supporting and championing the general Telco / Networking ecosystem. It is this passion and experience that makes us different. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </Waypoint>
-                </div>
-            </div>
+            <SectorsSection lineAnimation={lineAnimation} useWndowWidth={useWndowWidth} />
         </div>
         <div id="services" className="services-container">
             <Waypoint onEnter={() => highlightAnimation(true, "highlightServices")} onLeave={() => highlightAnimation(false, "highlightServices")}>
@@ -261,6 +202,7 @@ const IndexPage = () => {
                 </div>
             </Waypoint>
         </div>
+        <TeamSection lineAnimation={lineAnimation} useWndowWidth={useWndowWidth} />
         <FootprintSection highlightAnimation={highlightAnimation} />
         <CtaSection highlightAnimation={highlightAnimation} />
         <ContactSection highlightAnimation={highlightAnimation} />
