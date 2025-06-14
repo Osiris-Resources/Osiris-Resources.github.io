@@ -9,7 +9,7 @@ import {
 
 const FootprintSection = ({highlightAnimation}) => {
     return (
-        <Waypoint onEnter={() => highlightAnimation(true, "highlightFootprint")} onLeave={() => highlightAnimation(false, "highlightFootprint")}>
+        <Waypoint onEnter={() => highlightAnimation("highlightFootprint")} onLeave={() => highlightAnimation("highlightFootprint")}>
             <div id="globalFootprint" className="footprint-container">
                 <div className="footprint-container-sub">
                     <div className="container">

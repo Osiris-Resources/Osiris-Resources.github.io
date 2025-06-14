@@ -14,7 +14,7 @@ import {
 const ContactSection = ({highlightAnimation}) => {
     return(
         <div id="contact" className="contact-container">
-            <Waypoint onEnter={() => highlightAnimation(true, "highlightContact")} onLeave={() => highlightAnimation(false, "highlightContact")}>
+            <Waypoint onEnter={() => highlightAnimation("highlightContact")} onLeave={() => highlightAnimation("highlightContact")}>
                 <div className="container">
                     <div className="row">
                         <div className="col-12 text-center">

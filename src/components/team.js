@@ -6,7 +6,7 @@ const TeamSection = ({lineAnimation, useWndowWidth}) => {
     return (
         <div id="team" className="team-profiles">
             <div className="container">
-                <Waypoint onEnter={() => lineAnimation(true, "lineHorizontal", "lineVertical", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation(false, "lineHorizontal", "lineVertical", "line-animation-l", "line-animation-r")} bottomOffset={useWndowWidth() > 767.20 ? 80 : 0}>
+                <Waypoint onEnter={() => lineAnimation("lineHorizontal", "lineVertical", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation("lineHorizontal", "lineVertical", "line-animation-l", "line-animation-r")} bottomOffset={useWndowWidth() > 767.20 ? 80 : 0}>
                     <div className="row mb-5">
                         <div className="col-md-3">
                             <div className="profile-first">
@@ -25,11 +25,11 @@ const TeamSection = ({lineAnimation, useWndowWidth}) => {
                         </div>
                     </div>
                 </Waypoint>
-                <Waypoint onEnter={() => lineAnimation(true, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation(false, "lineLeft", "lineRight", "line-animation-l", "line-animation-r")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
+                <Waypoint onEnter={() => lineAnimation("lineLeft", "lineRight", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation("lineLeft", "lineRight", "line-animation-l", "line-animation-r")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
                     <div className="row mt-5 mb-5">
                         <div className="col-md-3 order-md-2">
                             <div className="profile-middle">
-                                <StaticImage src="../images/_img.png" alt="- Osiris Resources" />
+                                {/* <StaticImage src="../images/_img.png" alt="- Osiris Resources" /> */}
                                 <span id="lineLeft" className="accent-line line-left"></span>
                                 <span id="lineRight" className="accent-line line-right"></span>
                             </div>
@@ -44,7 +44,7 @@ const TeamSection = ({lineAnimation, useWndowWidth}) => {
                         </div>
                     </div>
                 </Waypoint>
-                <Waypoint onEnter={() => lineAnimation(true, "lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} onLeave={() => lineAnimation(false, "lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
+                <Waypoint onEnter={() => lineAnimation("lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} onLeave={() => lineAnimation("lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
                     <div className="row mt-5">
                         <div className="col-md-3">
                             <div className="profile-last">

@@ -3,7 +3,7 @@ import { Waypoint } from 'react-waypoint'
 
 const CtaSection = ({highlightAnimation}) => {
     return(
-        <Waypoint onEnter={() => highlightAnimation(true, "highlightCta")} onLeave={() => highlightAnimation(false, "highlightCta")}>
+        <Waypoint onEnter={() => highlightAnimation("highlightCta")} onLeave={() => highlightAnimation("highlightCta")}>
             <div id="osirisAi" className="container platform-container">
                 <div className="row">
                     <div className="col-12 text-center">
