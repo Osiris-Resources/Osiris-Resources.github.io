@@ -25,13 +25,13 @@ const TeamSection = ({lineAnimation, useWndowWidth}) => {
                         </div>
                     </div>
                 </Waypoint>
-                <Waypoint onEnter={() => lineAnimation("lineLeft", "lineRight", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation("lineLeft", "lineRight", "line-animation-l", "line-animation-r")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
+                {/* <Waypoint onEnter={() => lineAnimation("lineLeft", "lineRight", "line-animation-l", "line-animation-r")} onLeave={() => lineAnimation("lineLeft", "lineRight", "line-animation-l", "line-animation-r")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}> */}
                     <div className="row mt-5 mb-5">
                         <div className="col-md-3 order-md-2">
                             <div className="profile-middle">
                                 {/* <StaticImage src="../images/_img.png" alt="- Osiris Resources" /> */}
-                                <span id="lineLeft" className="accent-line line-left"></span>
-                                <span id="lineRight" className="accent-line line-right"></span>
+                                {/* <span id="lineLeft" className="accent-line line-left"></span>
+                                <span id="lineRight" className="accent-line line-right"></span> */}
                             </div>
                         </div>
                         <div className="col-md-9 order-md-1 profile-text">
@@ -43,7 +43,7 @@ const TeamSection = ({lineAnimation, useWndowWidth}) => {
                             </div>
                         </div>
                     </div>
-                </Waypoint>
+                {/* </Waypoint> */}
                 <Waypoint onEnter={() => lineAnimation("lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} onLeave={() => lineAnimation("lineHorizontalLast", "lineVerticalLast", "line-animation-r", "line-animation-l")} bottomOffset={useWndowWidth() > 767.20 ? 150 : 0}>
                     <div className="row mt-5">
                         <div className="col-md-3">

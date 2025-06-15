@@ -24,19 +24,19 @@ const TelcoImage = () => {
             <path id="Vector_15" d="M128.999 211.371C127.494 211.371 127.273 210.151 127.273 208.646V50.6331C127.273 49.1277 127.494 47.9075 128.999 47.9075C130.504 47.9075 130.725 49.1277 130.725 50.6331V208.646C130.725 210.152 130.504 211.371 128.999 211.371Z" fill="#111111"/>
             <path id="Vector_16" d="M129.002 176.42C107.267 176.42 86.7926 171.647 71.3508 162.981C55.4099 154.036 46.6309 141.968 46.6309 129C46.6309 116.033 55.4099 103.965 71.3508 95.0191C86.7948 86.3525 107.27 81.5796 129.002 81.5796C150.735 81.5796 171.211 86.3525 186.653 95.0191C202.593 103.964 211.373 116.033 211.373 129C211.373 141.968 202.594 154.036 186.653 162.981C171.209 171.648 150.733 176.42 129.002 176.42ZM129.002 85.0335C108.186 85.0335 88.6591 89.5588 74.0172 97.7757C59.8711 105.714 50.081 118.094 50.081 129.003C50.081 139.912 59.8717 152.292 74.0172 160.23C88.6602 168.447 108.187 172.972 129.002 172.972C149.816 172.972 169.344 168.447 183.986 160.23C198.132 152.292 207.923 139.912 207.923 129.003C207.923 118.094 198.132 105.714 183.986 97.7757C169.343 89.5588 149.816 85.0335 129.002 85.0335Z" fill="#111111"/>
             <path id="Vector_17" d="M207.364 130.727H49.3506C47.8453 130.727 46.625 130.507 46.625 129.001C46.625 127.496 47.8453 127.276 49.3506 127.276H207.364C208.869 127.276 210.089 127.496 210.089 129.001C210.089 130.507 208.869 130.727 207.364 130.727Z" fill="#111111"/>
-            <circle id="Ellipse 21" cx="8" cy="84" r="6.5" stroke="black" stroke-width="3"/>
+            <circle id="Ellipse 21" cx="8" cy="84" r="6.5" stroke="black" strokeWidth="3"/>
             </g>
-            <circle id="Ellipse 20" cx="242" cy="129" r="6.5" stroke="black" stroke-width="3"/>
-            <circle id="Ellipse 23" cx="16" cy="129" r="6.5" stroke="black" stroke-width="3"/>
-            <circle id="Ellipse 22" cx="250" cy="173" r="6.5" stroke="black" stroke-width="3"/>
-            <circle id="Ellipse 25" cx="129" cy="242" r="6.5" stroke="black" stroke-width="3"/>
-            <circle id="Ellipse 29" cx="129" cy="16" r="6.5" stroke="black" stroke-width="3"/>
-            <circle id="Ellipse 26" cx="174" cy="250" r="6.5" stroke="black" stroke-width="3"/>
-            <circle id="Ellipse 28" cx="174" cy="8" r="6.5" stroke="black" stroke-width="3"/>
-            <circle id="Ellipse 27" cx="85" cy="250" r="6.5" stroke="black" stroke-width="3"/>
-            <circle id="Ellipse 30" cx="85" cy="8" r="6.5" stroke="black" stroke-width="3"/>
-            <circle id="Ellipse 24" cx="8" cy="173" r="6.5" stroke="black" stroke-width="3"/>
-            <circle id="Ellipse 21_2" cx="250" cy="84" r="6.5" stroke="black" stroke-width="3"/>
+            <circle id="Ellipse 20" cx="242" cy="129" r="6.5" stroke="black" strokeWidth="3"/>
+            <circle id="Ellipse 23" cx="16" cy="129" r="6.5" stroke="black" strokeWidth="3"/>
+            <circle id="Ellipse 22" cx="250" cy="173" r="6.5" stroke="black" strokeWidth="3"/>
+            <circle id="Ellipse 25" cx="129" cy="242" r="6.5" stroke="black" strokeWidth="3"/>
+            <circle id="Ellipse 29" cx="129" cy="16" r="6.5" stroke="black" strokeWidth="3"/>
+            <circle id="Ellipse 26" cx="174" cy="250" r="6.5" stroke="black" strokeWidth="3"/>
+            <circle id="Ellipse 28" cx="174" cy="8" r="6.5" stroke="black" strokeWidth="3"/>
+            <circle id="Ellipse 27" cx="85" cy="250" r="6.5" stroke="black" strokeWidth="3"/>
+            <circle id="Ellipse 30" cx="85" cy="8" r="6.5" stroke="black" strokeWidth="3"/>
+            <circle id="Ellipse 24" cx="8" cy="173" r="6.5" stroke="black" strokeWidth="3"/>
+            <circle id="Ellipse 21_2" cx="250" cy="84" r="6.5" stroke="black" strokeWidth="3"/>
             </g>
             </g>
         </svg>

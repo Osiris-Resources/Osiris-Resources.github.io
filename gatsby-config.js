@@ -5,9 +5,9 @@ module.exports = {
     siteUrl: `https://osirisresources.com`,
     titleTemplate: `%s | Osiris Resources`,
     description:
-      `Osiris Resources is an expert consultancy delivering global hiring programs for clients in the Telecommunication and Computer Networking space.`,
+      `Osiris Resources is an expert consultancy delivering global hiring programs for clients in the Artificial Intelligence (AI), Telecommunications and Quantum Computing space.`,
     image: `/osiris-resources-og-image.jpg`,
-    keywords: `Expert Consultancy,Consultancy,Recruitment,Hiring,Telco,Telecommunications,Networking,Osiris Resources`,
+    keywords: `Expert Consultancy,Consultancy,Recruitment,Hiring,AI, Artificial Intelligence,Telco,Telecommunications,Quantum Computing,Networking,Osiris Resources`,
     maskedIcon: `/safari-pinned-tab.svg`,
     socials: [
       {

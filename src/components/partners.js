@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 const PartnersSection = () => {
-    (
+    return (
         <div className="partners">
             <div className="container-fluid">
                 <div className="row partner-box-container">

@@ -36,8 +36,10 @@ const FootprintSection = ({highlightAnimation}) => {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-12 text-center footprint-panel footprint-panel-alt">
-                                <p><span><FontAwesomeIcon icon={faScaleBalanced} /></span>Osiris can offer corporate legal advice to clients wishing to open up companies in Saudi and the Gulf.</p>
+                            <div className="col-12 text-center">
+                                <div className="footprint-panel footprint-panel-alt">
+                                    <p><span><FontAwesomeIcon icon={faScaleBalanced} /></span>Osiris can offer corporate legal advice to clients wishing to open up companies in Saudi and the Gulf.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
