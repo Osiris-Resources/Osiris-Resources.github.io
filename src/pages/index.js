@@ -64,7 +64,7 @@ const IndexPage = () => {
         <PartnersSection />
         <AboutSection highlightAnimation={highlightAnimation} floatAnimation={floatAnimation} useWndowWidth={useWndowWidth} />
         <ServicesSection highlightAnimation={highlightAnimation} numberAnimation={numberAnimation} />
-        <TeamSection lineAnimation={lineAnimation} useWndowWidth={useWndowWidth} />
+        <TeamSection highlightAnimation={highlightAnimation} lineAnimation={lineAnimation} useWndowWidth={useWndowWidth} />
         <FootprintSection highlightAnimation={highlightAnimation} />
         <CtaSection highlightAnimation={highlightAnimation} />
         <ContactSection highlightAnimation={highlightAnimation} />
