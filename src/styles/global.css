@@ -1789,6 +1789,10 @@ nav {
       font-size: 26px;
       max-width: 290px;
     }
+
+    .animate-highlight {
+      height: 80% !important;
+    }
   }
 
   @media screen and (max-width: 339.20px) {

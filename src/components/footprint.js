@@ -30,18 +30,18 @@ const FootprintSection = ({highlightAnimation}) => {
                                 <div className="footprint-panel footprint-content">
                                     <p><span><FontAwesomeIcon icon={faShoePrints} /></span>US - We work directly with clients in Santa Clara, Silicon Valley and on the East Coast some of the coolest tech hubs such as Boston.</p>
                                     <p><span><FontAwesomeIcon icon={faShoePrints} /></span>Europe - This is where it all started for us and is our bread and butter.</p>
-                                    <p><span><FontAwesomeIcon icon={faShoePrints} /></span>The Middle East - The most exciting current emerging tech hub globally. Our Director James has travelled far and wide in particular Saudi Arabia and UAE and we are very excited to watch this space as well as the rest of the world.</p>
+                                    <p><span><FontAwesomeIcon icon={faShoePrints} /></span>The Middle East - The most exciting current emerging tech hub globally. We have built strategic professional networks across key markets.</p>
                                     <p><span><FontAwesomeIcon icon={faShoePrints} /></span>APAC - We have covered very exciting projects in Japan, Singapore and Australia, every market is challenging but we know our industry well.</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="row">
+                        {/* <div className="row">
                             <div className="col-12 text-center">
                                 <div className="footprint-panel footprint-panel-alt">
-                                    <p><span><FontAwesomeIcon icon={faScaleBalanced} /></span>Osiris can offer corporate legal advice to clients wishing to open up companies in Saudi and the Gulf.</p>
+                                    <p><span><FontAwesomeIcon icon={faScaleBalanced} /></span></p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
