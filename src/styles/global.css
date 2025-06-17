@@ -1790,7 +1790,7 @@ nav {
       max-width: 290px;
     }
 
-    .animate-highlight {
+    .platform-container .animate-highlight {
       height: 80% !important;
     }
   }
